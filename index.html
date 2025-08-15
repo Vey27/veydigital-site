@@ -1,314 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>VeyDigital™ — Data, Dashboards & AI Agents</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="VeyDigital™ builds custom dashboards, automations, and AI agents. Hand-crafted solutions by Vey Damneun in Washington State." />
-  <meta name="author" content="Vey Damneun" />
-  <meta name="theme-color" content="#0D1B2A" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Urbanist:wght@600;800&display=swap" rel="stylesheet">
-  <!-- Favicon pack (replace /assets/* with your actual files once exported) -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
-  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#0D1B2A">
-  <meta name="msapplication-TileColor" content="#0D1B2A">
-  <style>
-    :root{--ink:#0D1B2A;--pop:#00AEEF;--gold:#FFC857;--paper:#ffffff;--mist:#F5F7FB;--slate:#3C4A5E}
-    *{box-sizing:border-box}
-    html,body{margin:0}
-    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:#0D1B2A;color:#0D1B2A;line-height:1.55}
-    a{color:var(--pop);text-decoration:none}
-    a:hover{opacity:.9}
-    .wrap{max-width:1120px;margin-inline:auto;padding:28px}
-    header{position:sticky;top:0;z-index:20;background:rgba(13,27,42,.85);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
-    .nav{display:flex;align-items:center;justify-content:space-between;color:#E6F1FF}
-    .logo{display:flex;align-items:center;gap:10px;color:#E6F1FF}
-    .logo svg{width:36px;height:36px}
-    .logo span{font-family:Urbanist,Inter,sans-serif;font-weight:800;letter-spacing:.2px;font-size:20px}
-    .menu{display:flex;gap:18px}
-    .menu a{color:#E6F1FF;opacity:.9;font-weight:600}
-    .menu a:hover{opacity:1}
-    .btn{background:var(--pop);color:#012133;border:none;border-radius:12px;padding:10px 16px;font-weight:800;box-shadow:0 6px 18px rgba(0,174,239,.25);cursor:pointer}
-
-    /* HERO */
-    .hero{background:linear-gradient(180deg,#0D1B2A 0%,#0D1B2A 52%,#0F2433 100%);padding:64px 28px;color:#EAF3FF}
-    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;max-width:1120px;margin:0 auto}
-    h1{font-family:Urbanist,Inter,sans-serif;font-weight:800;margin:0 0 10px;font-size:44px;line-height:1.05}
-    .hero p{color:#BCD2F0;font-size:18px;margin:0 0 18px}
-    .pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,200,87,.14);border:1px solid rgba(255,200,87,.35);border-radius:999px;padding:8px 12px;font-weight:800;color:#FFE9A6;margin-bottom:12px}
-    .card{background:#0F2433;border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:18px}
-    .kpis{display:flex;gap:14px;flex-wrap:wrap}
-    .kpi{flex:1 1 150px;background:#10283d;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:12px;text-align:center}
-    .kpi h4{margin:0 0 4px;color:#fff}
-    .kpi p{margin:0;color:#bcd2f0;font-size:13px}
-
-    /* MAIN SECTIONS */
-    main{background:var(--mist)}
-    section{background:var(--paper);border-radius:22px;padding:32px;margin:28px auto}
-    h2{margin:0 0 8px;font-size:28px}
-    .eyebrow{letter-spacing:.14em;text-transform:uppercase;color:#51627A;font-size:12px;margin-bottom:6px}
-    .grid{display:grid;gap:18px}
-    .cols-2{grid-template-columns:repeat(2,1fr)}
-    .cols-3{grid-template-columns:repeat(3,1fr)}
-    .box{border:1px solid #E6EDF6;border-radius:18px;background:#FCFDFF;padding:18px}
-    .muted{color:#526070}
-    ul.clean{padding-left:18px;margin:10px 0}
-    .price{font-weight:800}
-
-    /* TESTIMONIAL */
-    blockquote{margin:0;padding:0}
-    .quote{font-size:18px;color:#0E2133}
-    .who{color:#57677D;font-size:14px;margin-top:6px}
-
-    /* CALENDLY */
-    .cal{border:1px solid #E6EDF6;border-radius:18px;background:#FCFDFF}
-
-    /* FOOTER */
-    footer{color:#BCD2F0;text-align:center;padding:28px}
-
-    @media (max-width: 980px){
-      .hero-grid{grid-template-columns:1fr}
-      .cols-3,.cols-2{grid-template-columns:1fr}
-    }
-  </style>
-  
-  <!-- Schema.org Organization markup -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "VeyDigital",
-    "url": "https://veydigital.com",
-    "logo": "https://veydigital.com/assets/logo-512.png",
-    "founder": {
-      "@type": "Person",
-      "name": "Vey Damneun"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressRegion": "WA",
-      "addressCountry": "US"
-    },
-    "sameAs": [
-      "https://www.linkedin.com/in/vey-damneun"
-    ]
-  }
-  </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="VeyDigital — AI-powered data, automation, and media solutions for modern businesses." />
+    <meta name="keywords" content="VeyDigital, AI, automation, data analytics, media production, Power BI, automation services" />
+    <meta name="author" content="VeyDigital" />
+    <title>VeyDigital | AI-Powered Data & Media Solutions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: #f4f6f8;
+            color: #222;
+        }
+        header {
+            background: linear-gradient(135deg, #003366, #0066cc);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        nav {
+            background: #002244;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 2rem 1rem;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: #003366;
+        }
+        footer {
+            background: #002244;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
-  <!-- Hand-built by Vey Damneun for VeyDigital™ (custom code, no generators) -->
-  <header>
-    <div class="wrap nav" role="navigation" aria-label="Main">
-      <a class="logo" href="#" aria-label="VeyDigital Home">
-        <!-- Custom inline SVG logo -->
-        <svg viewBox="0 0 64 64" role="img" aria-label="VeyDigital logo">
-          <defs>
-            <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
-              <stop offset="0%" stop-color="#FFC857" />
-              <stop offset="100%" stop-color="#00AEEF" />
-            </linearGradient>
-          </defs>
-          <path d="M32 4c10.5 0 24 4.5 24 16v8c0 16-12.3 28.7-24 32C20.3 56.7 8 44 8 28v-8C8 8.5 21.5 4 32 4z" fill="url(#g1)"/>
-          <rect x="18" y="22" width="6" height="20" rx="2" fill="#0D1B2A" opacity="0.9"/>
-          <rect x="29" y="28" width="6" height="14" rx="2" fill="#0D1B2A" opacity="0.9"/>
-          <rect x="40" y="18" width="6" height="24" rx="2" fill="#0D1B2A" opacity="0.9"/>
-          <path d="M18 42 L24 42 L32 34 L40 42 L46 42 L32 28 Z" fill="#0D1B2A"/>
-        </svg>
-        <span>VeyDigital<span style="font-variant:all-small-caps">™</span></span>
-      </a>
-      <nav class="menu" aria-label="Sections">
+    <header>
+        <h1>VeyDigital</h1>
+        <p>AI-Powered Data, Automation & Media Solutions</p>
+    </header>
+    <nav>
         <a href="#services">Services</a>
-        <a href="#packages">Packages</a>
-        <a href="#work">Work</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
-      </nav>
-      <a class="btn" href="#book" aria-label="Book a call">Book a Free Call</a>
-    </div>
-  </header>
+    </nav>
 
-  <section class="hero">
-    <div class="hero-grid">
-      <div>
-        <span class="pill">Built in Washington • Hand‑crafted Solutions</span>
-        <h1>Data you can trust. Decisions you can defend.</h1>
-        <p>I'm <strong>Vey</strong>. I help teams ship <strong>custom dashboards</strong>, <strong>automation</strong>, and <strong>AI agents</strong> that save hours every week and make reporting painless. Every build is tailored — no templates that don't fit your data.</p>
-        <a class="btn" href="#book">Get Your AI Readiness Call</a>
-      </div>
-      <div class="card" role="img" aria-label="Key outcomes">
-        <div class="kpis">
-          <div class="kpi"><h4>2–4 wks</h4><p>Typical delivery time</p></div>
-          <div class="kpi"><h4>50%+</h4><p>Admin time saved</p></div>
-          <div class="kpi"><h4>24/7</h4><p>AI agent availability</p></div>
-          <div class="kpi"><h4>Live</h4><p>Refreshable KPIs</p></div>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Data Intelligence</h3>
+                <p>Clean, analyze, and visualize your business data with dashboards, predictive insights, and performance tracking.</p>
+            </div>
+            <div class="card">
+                <h3>Automation & AI Agents</h3>
+                <p>Streamline workflows, integrate APIs, and deploy AI agents for faster decision-making and communication.</p>
+            </div>
+            <div class="card">
+                <h3>AI Media Production</h3>
+                <p>Create engaging AI-powered videos, branded content, and marketing campaigns tailored to your audience.</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <main>
-    <section id="services" class="wrap" aria-labelledby="services-title">
-      <div class="eyebrow">What I Do</div>
-      <h2 id="services-title">Custom, not canned.</h2>
-      <div class="grid cols-3">
-        <div class="box">
-          <h3>Dashboards</h3>
-          <p class="muted">Power BI built around your KPIs — with data models that make sense to your team.</p>
-          <ul class="clean">
-            <li>Power BI, DAX, Power Query</li>
-            <li>SQL Server, Azure SQL</li>
-            <li>PDF/Excel email exports</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Automation</h3>
-          <p class="muted">Forms, approvals, and notifications that move work forward without manual nudges.</p>
-          <ul class="clean">
-            <li>Power Automate & Microsoft 365</li>
-            <li>AI OCR document routing</li>
-            <li>Policy‑aware workflows</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Predictive</h3>
-          <p class="muted">Forecasts and what‑ifs in plain English, surfaced where decisions happen.</p>
-          <ul class="clean">
-            <li>Python, scikit‑learn, XGBoost</li>
-            <li>Scenario testing tools</li>
-            <li>Insights inside Power BI</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>AI Agents</h3>
-          <p class="muted">Lovable‑built assistants that answer questions, find policy pages, and trigger workflows.</p>
-          <ul class="clean">
-            <li>Dashboard Q&A, payments & forms</li>
-            <li>Governance & performance use cases</li>
-            <li>Secure knowledge search</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Advisory</h3>
-          <p class="muted">Roadmaps, governance, and training for teams adopting AI responsibly.</p>
-          <ul class="clean">
-            <li>Architecture & data standards</li>
-            <li>Security‑minded practices</li>
-            <li>Enablement & hand‑off</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Class 042</h3>
-          <p class="muted">Delivered as SaaS or custom software under Class 042.</p>
-          <span class="muted">(Covers dashboards, automation, predictive, and AI agents.)</span>
-        </div>
-      </div>
     </section>
 
-    <section id="packages" class="wrap" aria-labelledby="packages-title">
-      <div class="eyebrow">Clear Options</div>
-      <h2 id="packages-title">Packages</h2>
-      <div class="grid cols-3">
-        <div class="box">
-          <h3>Quick Insights Dashboard</h3>
-          <p class="price">$4,000–$6,000 • 2–3 weeks</p>
-          <ul class="clean">
-            <li>Data cleaning & integration</li>
-            <li>1 custom Power BI dashboard (live)</li>
-            <li>Automated KPI emails (PDF/Excel)</li>
-            <li>1‑hour training + video guide</li>
-          </ul>
-          <p class="muted"><strong>AI Agent Add‑On:</strong> +$2,500–$4,000 — natural‑language Q&A & what‑if analysis.</p>
-        </div>
-        <div class="box">
-          <h3>AI Workflow Automation</h3>
-          <p class="price">$8,000–$12,000 • 4 weeks</p>
-          <ul class="clean">
-            <li>Forms, approvals, notifications</li>
-            <li>AI OCR & policy‑aware routing</li>
-            <li><strong>Includes AI Agent</strong> to handle requests</li>
-            <li>2‑hour training session</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Predictive Analytics for Growth</h3>
-          <p class="price">$10,000–$14,000 • 4–6 weeks</p>
-          <ul class="clean">
-            <li>Model training (Python, scikit‑learn/XGBoost)</li>
-            <li>Forecast & scenario tools</li>
-            <li>Insights dashboard</li>
-          </ul>
-          <p class="muted"><strong>AI Agent Add‑On:</strong> +$3,000–$4,000 — explains forecasts & suggests actions.</p>
-        </div>
-      </div>
+    <section id="about">
+        <h2>About VeyDigital</h2>
+        <p>We combine AI, automation, and creative media to help businesses move faster, work smarter, and connect with their audience. With a focus on innovation and measurable results, VeyDigital delivers solutions designed for growth.</p>
     </section>
 
-    <section id="work" class="wrap" aria-labelledby="work-title">
-      <div class="eyebrow">Recent Work</div>
-      <h2 id="work-title">One small story</h2>
-      <div class="grid cols-2">
-        <div class="box">
-          <h3>Cut reporting time in half</h3>
-          <p class="muted">I rebuilt a quarterly report into a live Power BI dashboard, added a simple approval flow, and set up scheduled PDF emails for stakeholders. The team retired three spreadsheets and reclaimed ~6 hours per week.</p>
-          <ul class="clean">
-            <li>Stack: Power BI, Power Automate, SharePoint</li>
-            <li>Outcome: faster reviews, fewer errors</li>
-          </ul>
-        </div>
-        <div class="box">
-          <blockquote>
-            <p class="quote">“Clear, fast, and exactly what we needed. Our managers stopped asking for screenshots — they just open the dashboard.”</p>
-            <p class="who">— Ops lead, WA</p>
-          </blockquote>
-        </div>
-      </div>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:vdamneun@gmail.com">vdamneun@gmail.com</a></p>
+        <p>Phone: (555) 123-4567</p>
     </section>
 
-    <section class="wrap" aria-labelledby="cal-title" id="book">
-      <div class="eyebrow">Schedule</div>
-      <h2 id="cal-title">Book a Free AI Readiness Call</h2>
-      <div class="box cal">
-        <div class="calendly-inline-widget" data-url="https://calendly.com/your-username/15min?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:720px;"></div>
-        <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-        <noscript><p class="muted">Calendly requires JavaScript. Or book directly at <a href="https://calendly.com/your-username/15min">this link</a>.</p></noscript>
-      </div>
-    </section>
-
-    <section id="contact" class="wrap" aria-labelledby="contact-title">
-      <div class="eyebrow">Get in Touch</div>
-      <h2 id="contact-title">Contact VeyDigital<span style="font-variant:all-small-caps">™</span></h2>
-      <div class="grid cols-2">
-        <div class="box">
-          <h3>Details</h3>
-          <p class="muted">
-            Email: <a href="mailto:vdamneun@gmail.com">vdamneun@gmail.com</a><br>
-            Phone: <a href="tel:+1206945444">(206) 945‑4444</a><br>
-            Website: <a href="https://veydigital.com">VeyDigital.com</a>
-          </p>
-          <p class="muted">Made in Washington.</p>
-        </div>
-        <div class="box">
-          <h3>Expect</h3>
-          <ul class="clean">
-            <li>15‑minute call</li>
-            <li>Roadmap & estimate in 48 hours</li>
-            <li>Delivery in 2–6 weeks depending on scope</li>
-          </ul>
-          <p class="muted">MSA/SLA on all work. 50% deposit on projects; subscriptions billed monthly in advance.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap">
-      <small>© 2025 VeyDigital. VeyDigital<span style="font-variant:all-small-caps">™</span> is a trademark of Vey Damneun. <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a></small>
-    </div>
-  </footer>
-
-  <!-- Optional: lightweight analytics (swap with your provider) -->
-  <!-- <script defer data-domain="veydigital.com" src="https://plausible.io/js/script.js"></script> -->
+    <footer>
+        <p>© 2025 VeyDigital. All rights reserved.</p>
+    </footer>
 </body>
 </html>
