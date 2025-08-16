@@ -1,5 +1,8 @@
 # VeyDigital™
 
+Modern AI dashboards, workflow automation, and predictive analytics — helping organizations turn raw data into clear decisions with speed and accuracy.
+
+
 ![GitHub last commit](https://img.shields.io/github/last-commit/Vey27/veydigital-site)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Vey27/veydigital-site)
 ![GitHub stars](https://img.shields.io/github/stars/Vey27/veydigital-site?style=social)
@@ -8,7 +11,7 @@
 
 Modern AI dashboards, workflow automation, and predictive analytics.
 
-## Website
+## 🌐 Website
 [veydigital.com](https://veydigital.com)
 
 ## What We Do
@@ -39,5 +42,36 @@ Modern AI dashboards, workflow automation, and predictive analytics.
 ## Contact
 - Email: info@veydigital.com
 - Website: [veydigital.com](https://veydigital.com)
+
+# Brand
+**Colors:**
+- Deep Tech Blue `#0D1B2A`
+- Electric Blue `#00AEEF`
+- Warm Yellow `#FFC857`
+- Ink `#E6EEF8`
+- Slate `#A9B8CC`
+
+**Typography:**
+- System sans (Arial/Helvetica)
+- Optional: Inter (400/600/800)
+
+**Assets:**
+- Favicon → `/favicon.png`
+- Social Preview → `/og-image.jpg`
+- Logo → `/logo.png` (optional, transparent background)
+
+---
+
+## Repo Info
+- `index.html` → Website root page
+- `CNAME` → Domain mapping for GitHub Pages
+- `README.md` → Repo overview & documentation
+- `LICENSE` → Repository license information (already included)
+
+---
+
+## License
+This repository is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
 
 © VeyDigital™
