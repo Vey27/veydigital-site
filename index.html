@@ -3,35 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VeyDigital™</title>
-  <meta name="description" content="I build modern AI dashboards, workflow automations, and predictive analytics so you can move from raw data to clear decisions—fast." />
+  <title>VeyDigital™ | AI Dashboards, Automation & Predictive Analytics</title>
+  <meta name="description" content="I design AI dashboards, workflow automation, and predictive analytics that turn raw data into clear, fast decisions for your team." />
+  <meta name="keywords" content="VeyDigital, AI dashboards, workflow automation, predictive analytics, business intelligence, Power BI, SQL, Python, data automation, AI agents, data strategy" />
+  <link rel="canonical" href="https://veydigital.com/" />
+  <meta name="theme-color" content="#0D1B2A" />
 
   <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="VeyDigital — Modern AI Dashboards, Automation & Analytics" />
+  <meta property="og:title" content="VeyDigital — AI Dashboards, Automation & Analytics" />
   <meta property="og:description" content="From raw data to clear decisions with speed and accuracy." />
   <meta property="og:url" content="https://veydigital.com/" />
   <meta property="og:image" content="https://veydigital.com/og-image.jpg" />
   <meta property="og:site_name" content="VeyDigital" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="VeyDigital — Modern AI Dashboards, Automation & Analytics" />
+  <meta name="twitter:title" content="VeyDigital — AI Dashboards, Automation & Analytics" />
   <meta name="twitter:description" content="From raw data to clear decisions with speed and accuracy." />
   <meta name="twitter:image" content="https://veydigital.com/og-image.jpg" />
 
-  <!-- Favicon -->
+  <!-- Icons -->
   <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-  <!-- Styles: clean, modern, single-file -->
+  <!-- Schema.org JSON-LD (Organization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "VeyDigital",
+    "url": "https://veydigital.com",
+    "logo": "https://veydigital.com/og-image.jpg",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "info@veydigital.com"
+    }]
+  }
+  </script>
+
+  <!-- Styles -->
   <style>
     :root{
       --ink:#0D1B2A; --bg:#f9fbfd; --primary:#00AEEF; --accent:#FFC857; --muted:#4B5B6E;
       --card:#ffffff; --shadow:0 10px 30px rgba(0,0,0,.08); --radius:14px;
+      --focus:#94d9ff;
     }
     *{box-sizing:border-box}
     body{margin:0;font-family:Arial, Helvetica, sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
     header{background:#0D1B2A;color:#fff;text-align:center;padding:3rem 1rem;position:relative;overflow:hidden}
-    header h1{margin:0;font-size:2.4rem}
-    header p{margin:.6rem auto 0;max-width:58ch;color:#E6EEF8}
-    .cta{display:inline-block;margin-top:1.1rem;background:linear-gradient(180deg,var(--primary),#0088b8);color:#061019;padding:.8rem 1.1rem;border-radius:10px;font-weight:800;letter-spacing:.2px;text-decoration:none;box-shadow:0 8px 20px rgba(0,174,239,.25)}
+    header h1{margin:0;font-size:2.8rem;line-height:1.2}
+    header p{margin:.8rem auto 0;max-width:60ch;color:#E6EEF8;font-size:1.2rem;font-weight:300}
+    .cta{display:inline-block;margin-top:1.4rem;background:linear-gradient(180deg,var(--primary),#0088b8);color:#061019;padding:.95rem 1.4rem;border-radius:10px;font-weight:800;letter-spacing:.2px;text-decoration:none;box-shadow:0 8px 20px rgba(0,174,239,.25);transition:transform .15s ease, box-shadow .15s ease}
+    .cta:hover{transform:translateY(-1px);box-shadow:0 12px 24px rgba(0,174,239,.28)}
+    .cta:focus{outline:3px solid var(--focus);outline-offset:3px}
     main{max-width:980px;margin:2rem auto;padding:0 1rem}
     section{margin:0 0 2rem}
     h2{font-size:1.6rem;color:var(--primary);margin:0 0 .6rem;display:inline-block;border-bottom:3px solid var(--accent);padding-bottom:.25rem}
@@ -41,89 +64,93 @@
     .list{margin:.2rem 0 0;padding-left:1.1rem}
     .list li{margin:.4rem 0}
     .pill{display:inline-block;background:#eef7ff;border:1px solid #cde9f8;color:#095b75;border-radius:999px;padding:.2rem .55rem;font-size:.8rem;margin:.15rem .25rem 0 0}
-    .kicker{color:var(--muted);font-size:.95rem}
-    footer{background:#0D1B2A;color:#fff;text-align:center;padding:1rem;margin-top:2.5rem}
+    .kicker{color:var(--muted);font-size:.95rem;font-weight:500}
+    footer{background:#0D1B2A;color:#fff;text-align:center;padding:1rem;margin-top:2.5rem;font-size:.95rem}
+    footer strong{color:var(--accent)}
     a{color:var(--primary)}
+    a:focus{outline:3px solid var(--focus);outline-offset:3px}
 
-    /* Scroll-reveal animation */
+    /* Scroll reveal */
     [data-reveal]{opacity:.001;transform:translateY(12px);transition:opacity .6s ease, transform .6s ease}
     .reveal-in{opacity:1 !important;transform:translateY(0) !important}
+    @media (prefers-reduced-motion: reduce){
+      [data-reveal]{opacity:1;transform:none;transition:none}
+      .cta{transition:none}
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>VeyDigital™</h1>
-    <p>I help businesses turn messy data into dependable decisions. I design KPI dashboards, automate workflows, and ship predictive models that speak plain English and drive outcomes.</p>
-    <a class="cta" href="https://calendly.com/veydigital/30min-discovery" target="_blank" rel="noopener">Book a free discovery call</a>
+    <p>From spreadsheets to strategy — I deliver AI dashboards, automation, and predictive insights that give leaders answers fast.</p>
+    <a class="cta" href="https://calendly.com/veydigital/30min-discovery" target="_blank" rel="noopener" aria-label="Book a free 30 minute discovery call on Calendly">Book a free discovery call</a>
   </header>
 
   <main>
     <section class="grid">
       <article class="card" data-reveal>
-        <h2>Quick Insights Dashboard</h2>
-        <p class="kicker">Decision‑ready KPIs with weekly insight summaries to your inbox.</p>
+        <h2>Dashboards That Speak Clearly</h2>
+        <p class="kicker">Numbers turned into stories your team can act on.</p>
         <ul class="list">
-          <li>Track sales, revenue, churn, and unit economics in one place.</li>
-          <li>AI explains trends and answers “what‑if” questions clearly.</li>
+          <li>One clear view of sales, revenue, churn, and performance.</li>
+          <li>AI highlights trends and explains the “why” in plain language.</li>
         </ul>
-        <span class="pill">2–3 weeks</span>
       </article>
 
       <article class="card" data-reveal>
-        <h2>AI Workflow Automation</h2>
-        <p class="kicker">Cut manual process time by 50–80% across finance, ops, and HR.</p>
+        <h2>Automation That Frees Time</h2>
+        <p class="kicker">Everyday tasks off your plate, results on autopilot.</p>
         <ul class="list">
-          <li>Onboarding, invoice approvals, leave requests, compliance.</li>
-          <li>Natural‑language triggers: “Approve invoice 123 and notify A/P.”</li>
+          <li>Smoother approvals, onboarding, and recurring tasks.</li>
+          <li>Natural-language triggers that feel effortless.</li>
         </ul>
-        <span class="pill">3–5 weeks</span>
       </article>
 
       <article class="card" data-reveal>
-        <h2>Predictive Analytics for Growth</h2>
-        <p class="kicker">Forecast demand, prioritize retention, and test pricing scenarios.</p>
+        <h2>Analytics That Predict Growth</h2>
+        <p class="kicker">Clarity today, foresight for tomorrow.</p>
         <ul class="list">
-          <li>CLV & churn risk scoring with confidence bands.</li>
-          <li>“What‑if” simulations for mix, expansion, and pricing.</li>
+          <li>Anticipate churn and customer lifetime value with accuracy.</li>
+          <li>Test pricing, product mix, and growth strategies before rollout.</li>
         </ul>
-        <span class="pill">4–6 weeks</span>
       </article>
 
       <article class="card" data-reveal>
-        <h2>VeyCare Subscription</h2>
-        <p class="kicker">I keep your dashboards, automations, and AI agents sharp as your KPIs evolve.</p>
+        <h2>Ongoing Support That Keeps You Ahead</h2>
+        <p class="kicker">Partnership that adapts as your business evolves.</p>
         <ul class="list">
-          <li>Monthly optimization and rapid change requests.</li>
-          <li>Quarterly roadmap alignment and new feature pilots.</li>
+          <li>Monthly tweaks as your metrics evolve.</li>
+          <li>Quarterly reviews to stay aligned with goals.</li>
         </ul>
         <span class="pill">Ongoing</span>
       </article>
     </section>
 
     <section class="card" data-reveal>
-      <h2>Outcomes I Aim For</h2>
+      <h2>Outcomes You’ll See</h2>
       <ul class="list">
-        <li>Faster time‑to‑insight and fewer manual spreadsheets.</li>
-        <li>Reliable, single‑source‑of‑truth metrics leadership trusts.</li>
-        <li>Proactive alerts and forecasts that guide action—not noise.</li>
+        <li>Decisions made faster, with fewer spreadsheets.</li>
+        <li>Metrics leadership can act on immediately.</li>
+        <li>Forecasts that give you a head start on growth.</li>
       </ul>
-      <p class="kicker">Every engagement ends with a concise handoff, training, and clear metric logic.</p>
+      <p class="kicker" style="margin-top:.6rem">Every project includes a clean handoff, live training, and clear logic behind every metric.</p>
     </section>
 
     <section class="card" data-reveal>
-      <h2>Contact</h2>
+      <h2>Let’s Talk</h2>
+      <p>It starts with a quick conversation. Share your goals and I’ll design a custom 2–6 week roadmap with milestones that match your priorities.</p>
+      <p><a href="https://calendly.com/veydigital/30min-discovery" target="_blank" rel="noopener" class="cta">Book a free discovery call</a></p>
       <p>Email: <a href="mailto:info@veydigital.com">info@veydigital.com</a> · Website: <a href="https://veydigital.com">veydigital.com</a></p>
-      <p class="kicker">Tell me your top three outcomes. I’ll propose a 2–6 week plan with milestones and a tailored quote.</p>
-      <p class="kicker" style="margin-top:.6rem">Privacy: I use privacy‑friendly, cookie‑free analytics to understand basic traffic. No personal data, no tracking ads.</p>
+      <p class="kicker" style="margin-top:.6rem">Privacy note: I use cookie-free, privacy-friendly analytics to see only basic traffic. No personal data, no ads — ever.</p>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 VeyDigital™. All rights reserved.</p>
+    <p>© 2025 <strong>VeyDigital™</strong>. Making data work for you — clear, simple, and built for growth.</p>
   </footer>
 
   <script>
-    // Subtle scroll‑reveal for cards
+    // Scroll reveal
     (function(){
       const io = new IntersectionObserver((entries)=>{
         entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('reveal-in'); io.unobserve(e.target); } });
@@ -131,5 +158,15 @@
       document.querySelectorAll('[data-reveal]').forEach(el=> io.observe(el));
     })();
   </script>
+  <noscript>
+    <style>[data-reveal]{opacity:1;transform:none}</style>
+  </noscript>
 </body>
 </html>
+
+<!-- robots.txt (create a new file in your repo root named robots.txt with this content) -->
+<!--
+User-agent: *
+Allow: /
+Sitemap: https://veydigital.com/sitemap.xml
+-->
