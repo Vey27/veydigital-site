@@ -1,0 +1,9 @@
+# SECURITY.txt
+
+Contact: mailto:contact@veydigital.com
+Contact: https://www.linkedin.com/in/vey-damneun-msba-20b27a119/
+Policy: https://veydigital.com/security
+Acknowledgments: https://veydigital.com/hall-of-fame
+Encryption: https://veydigital.com/pgp-key.txt
+Preferred-Languages: en
+Canonical: https://veydigital.com/.well-known/security.txt
