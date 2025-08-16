@@ -28,7 +28,7 @@ Modern AI dashboards, workflow automation, and predictive analytics.
 4. Enforce HTTPS once certificate is ready.
 
 ## Topics
-`ai` · `analytics` · `automation` · `powerbi` · `business-intelligence`
+`ai` · `analytics` · `automation` · `business-intelligence`
 
 ## Best Practices
 - Keep repo organized with clear commit messages.
