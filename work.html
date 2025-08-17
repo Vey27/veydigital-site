@@ -9,18 +9,33 @@
   <meta name="theme-color" content="#0D1B2A" />
   <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Sample Dashboards — VeyDigital" />
   <meta property="og:description" content="Example KPI layouts and metrics I deliver for clients." />
   <meta property="og:url" content="https://veydigital.com/work.html" />
   <meta property="og:image" content="https://veydigital.com/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:site_name" content="VeyDigital" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Sample Dashboards — VeyDigital" />
   <meta name="twitter:description" content="Example KPI layouts and metrics I deliver for clients." />
   <meta name="twitter:image" content="https://veydigital.com/og-image.jpg" />
+
+  <!-- Breadcrumbs (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://veydigital.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Sample Dashboards", "item": "https://veydigital.com/work.html"}
+    ]
+  }
+  </script>
   
   <style>
     :root{--ink:#0D1B2A;--bg:#f9fbfd;--primary:#00AEEF;--accent:#FFC857;--muted:#4B5B6E;--card:#fff;--shadow:0 10px 30px rgba(0,0,0,.08);--radius:14px;--focus:#94d9ff}
@@ -57,15 +72,15 @@
     <h1>Sample Dashboards</h1>
     <p>Here are example KPI layouts I commonly deliver. Want a walkthrough tailored to your data?</p>
     <div>
-      <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=workpage" target="_blank" rel="noopener">Book a tailored walkthrough</a>
-      <a class="back" href="/">Back to home</a>
+      <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=workpage" target="_blank" rel="noopener" aria-label="Book a tailored walkthrough on Calendly">Book a tailored walkthrough</a>
+      <a class="back" href="/" aria-label="Back to homepage">Back to home</a>
     </div>
   </header>
 
   <main id="main">
     <section class="grid">
       <article class="card" data-reveal>
-        <h2>Revenue & Churn Overview</h2>
+        <h2>Revenue &amp; Churn Overview</h2>
         <p class="kicker">MRR/ARR, net/gross churn, retention cohorts, leading indicators, commentary.</p>
         <ul class="list">
           <li>Rolling 12-month trend with seasonality.</li>
@@ -95,8 +110,8 @@
       </article>
 
       <article class="card" data-reveal>
-        <h2>Forecast & Scenarios</h2>
-        <p class="kicker">12–18 month forecast with what‑if pricing & expansion simulations.</p>
+        <h2>Forecast &amp; Scenarios</h2>
+        <p class="kicker">12–18 month forecast with what‑if pricing &amp; expansion simulations.</p>
         <ul class="list">
           <li>Base, stretch, and conservative scenarios.</li>
           <li>Price change vs. demand elasticity simulations.</li>
@@ -108,7 +123,7 @@
 
   <footer>
     <p>
-      <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=footer" target="_blank" rel="noopener">Book a free discovery call</a>
+      <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=footer" target="_blank" rel="noopener" aria-label="Book a free discovery call on Calendly">Book a free discovery call</a>
     </p>
     <p>© 2025 <strong>VeyDigital™</strong></p>
   </footer>
