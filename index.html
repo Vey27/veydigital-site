@@ -28,8 +28,8 @@
   <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-  <!-- Content Security Policy (meta-based for GitHub Pages) -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self'; frame-src https://calendly.com;" />
+  <!-- Content Security Policy (adjusted to allow inline script & style used on this page) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self'; frame-src https://calendly.com;">
 
   <!-- Schema.org JSON-LD (Organization) -->
   <script type="application/ld+json">
@@ -39,7 +39,9 @@
     "name": "VeyDigital",
     "url": "https://veydigital.com",
     "logo": "https://veydigital.com/og-image.jpg",
-    
+    "sameAs": [
+      "https://www.linkedin.com/in/vey-damneun-msba-20b27a119/"
+    ],
     "contactPoint": [{
       "@type": "ContactPoint",
       "contactType": "sales",
@@ -121,7 +123,9 @@
         <ul class="list">
           <li>One clear view of sales, revenue, churn, and performance.</li>
           <li>AI highlights trends and explains the “why” in plain language.</li>
+          <li>Seamless with Power BI, SQL, and Power Automate.</li>
         </ul>
+        <span class="pill">2–3 weeks</span>
       </article>
 
       <article class="card" data-reveal>
@@ -130,8 +134,9 @@
         <ul class="list">
           <li>Smoother approvals, onboarding, and recurring tasks.</li>
           <li>Natural-language triggers that feel effortless.</li>
+          <li>Runs on Microsoft 365, AI OCR, and Power Automate.</li>
         </ul>
-    
+        <span class="pill">3–5 weeks</span>
       </article>
 
       <article class="card" data-reveal>
@@ -140,8 +145,9 @@
         <ul class="list">
           <li>Anticipate churn and customer lifetime value with accuracy.</li>
           <li>Test pricing, product mix, and growth strategies before rollout.</li>
+          <li>Powered by Python, scikit-learn, and Power BI.</li>
         </ul>
-
+        <span class="pill">4–6 weeks</span>
       </article>
 
       <article class="card" data-reveal>
@@ -194,12 +200,4 @@
     <style>[data-reveal]{opacity:1;transform:none}</style>
   </noscript>
 </body>
-<!-- deploy: 2025-08-16T12:00:00-07:00 -->
 </html>
-
-<!-- robots.txt (create a new file in your repo root named robots.txt with this content) -->
-<!--
-User-agent: *
-Allow: /
-Sitemap: https://veydigital.com/sitemap.xml
--->
