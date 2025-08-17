@@ -7,27 +7,17 @@
   <meta name="description" content="I design AI dashboards, workflow automation, and predictive analytics that turn raw data into clear, fast decisions for your team." />
   <meta name="keywords" content="VeyDigital, AI dashboards, workflow automation, predictive analytics, business intelligence, Power BI, SQL, Python, data automation, AI agents, data strategy" />
   <link rel="canonical" href="https://veydigital.com/" />
- 
-  <!-- Canonical: keep exactly one -->
-  <link rel="canonical" href="https://veydigital.com/" />
-
-  <div class="cta-group">
-  <a class="cta"
-     href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=homepage"
-     target="_blank" rel="noopener"
-     aria-label="Book a free 30 minute discovery call on Calendly">Book a free discovery call</a>
-
-  <a class="cta-secondary" href="/work.html" aria-label="See sample dashboards">See sample dashboards</a>
-</div>
-
-  
   <meta name="theme-color" content="#0D1B2A" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
   <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
   <meta property="og:title" content="VeyDigital — AI Dashboards, Automation & Analytics" />
   <meta property="og:description" content="From raw data to clear decisions with speed and accuracy." />
   <meta property="og:url" content="https://veydigital.com/" />
   <meta property="og:image" content="https://veydigital.com/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:site_name" content="VeyDigital" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="VeyDigital — AI Dashboards, Automation & Analytics" />
@@ -38,6 +28,9 @@
   <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
+  <!-- Content Security Policy (meta-based for GitHub Pages) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self'; frame-src https://calendly.com;" />
+
   <!-- Schema.org JSON-LD (Organization) -->
   <script type="application/ld+json">
   {
@@ -46,6 +39,7 @@
     "name": "VeyDigital",
     "url": "https://veydigital.com",
     "logo": "https://veydigital.com/og-image.jpg",
+    
     "contactPoint": [{
       "@type": "ContactPoint",
       "contactType": "sales",
@@ -66,9 +60,19 @@
     header{background:#0D1B2A;color:#fff;text-align:center;padding:3rem 1rem;position:relative;overflow:hidden}
     header h1{margin:0;font-size:2.8rem;line-height:1.2}
     header p{margin:.8rem auto 0;max-width:60ch;color:#E6EEF8;font-size:1.2rem;font-weight:300}
-    .cta{display:inline-block;margin-top:1.4rem;background:linear-gradient(180deg,var(--primary),#0088b8);color:#061019;padding:.95rem 1.4rem;border-radius:10px;font-weight:800;letter-spacing:.2px;text-decoration:none;box-shadow:0 8px 20px rgba(0,174,239,.25);transition:transform .15s ease, box-shadow .15s ease}
+    .cta{display:inline-block;background:linear-gradient(180deg,var(--primary),#0088b8);color:#061019;padding:.95rem 1.4rem;border-radius:10px;font-weight:800;letter-spacing:.2px;text-decoration:none;box-shadow:0 8px 20px rgba(0,174,239,.25);transition:transform .15s ease, box-shadow .15s ease}
     .cta:hover{transform:translateY(-1px);box-shadow:0 12px 24px rgba(0,174,239,.28)}
     .cta:focus{outline:3px solid var(--focus);outline-offset:3px}
+
+    .cta-group{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1.2rem}
+    .cta-secondary{
+      display:inline-block;padding:.9rem 1.2rem;border-radius:10px;font-weight:700;letter-spacing:.2px;
+      text-decoration:none;border:1.5px solid #E6EEF8;color:#E6EEF8;background:transparent;
+      transition:transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease;
+    }
+    .cta-secondary:hover{transform:translateY(-1px);background:#e6eef81a;box-shadow:0 8px 20px rgba(255,255,255,.12)}
+    .cta-secondary:focus{outline:3px solid var(--focus);outline-offset:3px}
+
     main{max-width:980px;margin:2rem auto;padding:0 1rem}
     section{margin:0 0 2rem}
     h2{font-size:1.6rem;color:var(--primary);margin:0 0 .6rem;display:inline-block;border-bottom:3px solid var(--accent);padding-bottom:.25rem}
@@ -84,6 +88,10 @@
     a{color:var(--primary)}
     a:focus{outline:3px solid var(--focus);outline-offset:3px}
 
+    /* Skip link */
+    .sr-only-focusable{position:absolute;left:-9999px;top:auto}
+    .sr-only-focusable:focus{left:8px;top:8px;background:#fff;padding:.5rem;border:2px solid #000;z-index:9999}
+
     /* Scroll reveal */
     [data-reveal]{opacity:.001;transform:translateY(12px);transition:opacity .6s ease, transform .6s ease}
     .reveal-in{opacity:1 !important;transform:translateY(0) !important}
@@ -91,25 +99,21 @@
       [data-reveal]{opacity:1;transform:none;transition:none}
       .cta{transition:none}
     }
-    .cta-group{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1.2rem}
-.cta-secondary{
-  display:inline-block;padding:.9rem 1.2rem;border-radius:10px;font-weight:700;letter-spacing:.2px;
-  text-decoration:none;border:1.5px solid #E6EEF8;color:#E6EEF8;background:transparent;
-  transition:transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease;
-}
-.cta-secondary:hover{transform:translateY(-1px);background:#e6eef81a;box-shadow:0 8px 20px rgba(255,255,255,.12)}
-.cta-secondary:focus{outline:3px solid #94d9ff;outline-offset:3px}
-
   </style>
 </head>
 <body>
+  <a href="#main" class="sr-only-focusable">Skip to content</a>
+
   <header>
     <h1>VeyDigital™</h1>
     <p>From spreadsheets to strategy — I deliver AI dashboards, automation, and predictive insights that give leaders answers fast.</p>
-    <a class="cta" href="https://calendly.com/veydigital/30min-discovery" target="_blank" rel="noopener" aria-label="Book a free 30 minute discovery call on Calendly">Book a free discovery call</a>
+    <div class="cta-group">
+      <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=homepage" target="_blank" rel="noopener" aria-label="Book a free 30 minute discovery call on Calendly">Book a free discovery call</a>
+      <a class="cta-secondary" href="/work.html" aria-label="See sample dashboards">See sample dashboards</a>
+    </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="grid">
       <article class="card" data-reveal>
         <h2>Dashboards That Speak Clearly</h2>
@@ -127,6 +131,7 @@
           <li>Smoother approvals, onboarding, and recurring tasks.</li>
           <li>Natural-language triggers that feel effortless.</li>
         </ul>
+    
       </article>
 
       <article class="card" data-reveal>
@@ -136,6 +141,7 @@
           <li>Anticipate churn and customer lifetime value with accuracy.</li>
           <li>Test pricing, product mix, and growth strategies before rollout.</li>
         </ul>
+
       </article>
 
       <article class="card" data-reveal>
@@ -162,21 +168,17 @@
     <section class="card" data-reveal>
       <h2>Let’s Talk</h2>
       <p>It starts with a quick conversation. Share your goals and I’ll design a custom 2–6 week roadmap with milestones that match your priorities.</p>
-      <p><a href="https://calendly.com/veydigital/30min-discovery" target="_blank" rel="noopener" class="cta">Book a free discovery call</a></p>
+      <p><a href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=homepage" target="_blank" rel="noopener" class="cta">Book a free discovery call</a></p>
       <p>Email: <a href="mailto:info@veydigital.com">info@veydigital.com</a> · Website: <a href="https://veydigital.com">veydigital.com</a></p>
       <p class="kicker" style="margin-top:.6rem">Privacy note: I use cookie-free, privacy-friendly analytics to see only basic traffic. No personal data, no ads — ever.</p>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 <strong>VeyDigital™</strong>. Making data work for you — clear, simple, and built for growth.</p>
     <p>
-  <a class="cta"
-     href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=footer"
-     target="_blank" rel="noopener"
-     aria-label="Book a free 30 minute discovery call on Calendly">Book a free discovery call</a>
-</p>
-
+      <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=footer" target="_blank" rel="noopener" aria-label="Book a free 30 minute discovery call on Calendly">Book a free discovery call</a>
+    </p>
+    <p>© 2025 <strong>VeyDigital™</strong>. Making data work for you — clear, simple, and built for growth.</p>
   </footer>
 
   <script>
@@ -192,8 +194,7 @@
     <style>[data-reveal]{opacity:1;transform:none}</style>
   </noscript>
 </body>
-    <!-- deploy: 2025-08-16T12:00:00-07:00 -->
-
+<!-- deploy: 2025-08-16T12:00:00-07:00 -->
 </html>
 
 <!-- robots.txt (create a new file in your repo root named robots.txt with this content) -->
