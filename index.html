@@ -10,6 +10,16 @@
  
   <!-- Canonical: keep exactly one -->
   <link rel="canonical" href="https://veydigital.com/" />
+
+  <div class="cta-group">
+  <a class="cta"
+     href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=homepage"
+     target="_blank" rel="noopener"
+     aria-label="Book a free 30 minute discovery call on Calendly">Book a free discovery call</a>
+
+  <a class="cta-secondary" href="/work.html" aria-label="See sample dashboards">See sample dashboards</a>
+</div>
+
   
   <meta name="theme-color" content="#0D1B2A" />
 
@@ -81,6 +91,15 @@
       [data-reveal]{opacity:1;transform:none;transition:none}
       .cta{transition:none}
     }
+    .cta-group{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1.2rem}
+.cta-secondary{
+  display:inline-block;padding:.9rem 1.2rem;border-radius:10px;font-weight:700;letter-spacing:.2px;
+  text-decoration:none;border:1.5px solid #E6EEF8;color:#E6EEF8;background:transparent;
+  transition:transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease;
+}
+.cta-secondary:hover{transform:translateY(-1px);background:#e6eef81a;box-shadow:0 8px 20px rgba(255,255,255,.12)}
+.cta-secondary:focus{outline:3px solid #94d9ff;outline-offset:3px}
+
   </style>
 </head>
 <body>
@@ -151,6 +170,13 @@
 
   <footer>
     <p>© 2025 <strong>VeyDigital™</strong>. Making data work for you — clear, simple, and built for growth.</p>
+    <p>
+  <a class="cta"
+     href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=footer"
+     target="_blank" rel="noopener"
+     aria-label="Book a free 30 minute discovery call on Calendly">Book a free discovery call</a>
+</p>
+
   </footer>
 
   <script>
