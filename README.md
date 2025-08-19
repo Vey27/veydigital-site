@@ -15,7 +15,7 @@
 <p align="center">
   <a href="https://www.veydigital.com" style="background:#0D1B2A;color:#E6EEF8;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin:5px;">🏠 Home</a>
   <a href="https://www.veydigital.com/work.html" style="background:#0D1B2A;color:#E6EEF8;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin:5px;">🧰 Work</a>
-  <a href="https://github.com/Vey27/veydigital-site" style="background:#0D1B2A;color:#E6EEF8;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin:5px;">📄 Repository</a>
+  <a href="https://github.com/Vey27/veydigital-site" style="background:#0D1B2A;color:#E6EEF8;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin:5px;">📄 README</a>
 </p>
 
 ---
