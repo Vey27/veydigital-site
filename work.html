@@ -9,11 +9,9 @@
   <meta name="theme-color" content="#000000" />
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
-  <!-- Icons (same as index.html) -->
+  <!-- Icons -->
   <link rel="icon" href="assets/img/logotranparentoutlinetext.png" type="image/png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logotranparentoutlinetext.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logotranparentoutlinetext.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logotranparentoutlinetext.png" />
+  <link rel="apple-touch-icon" href="assets/img/logoblackground.png" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -22,7 +20,7 @@
   <meta property="og:url" content="https://veydigital.com/work.html" />
   <meta property="og:image" content="https://veydigital.com/assets/img/logotranparentoutlinetext.png" />
 
-  <!-- CSP -->
+  <!-- Content Security Policy -->
   <meta http-equiv="Content-Security-Policy"
         content="default-src 'self'; img-src 'self' https: data:;
                  script-src 'self' 'unsafe-inline';
@@ -42,7 +40,8 @@
       background:#000;
       color:#fff;
       text-align:center;
-      padding:3rem 1rem 2rem;
+      padding:3rem 1rem;
+      position:relative;
     }
     header .brand img{
       height:240px;
@@ -51,31 +50,25 @@
       display:block;
     }
     header p{
-      margin:.8rem auto 0;
+      margin:.8rem auto 1.2rem;
       max-width:60ch;
       color:#E6EEF8;
       font-size:1.2rem;
       font-weight:300;
     }
 
-    /* Buttons */
-    .cta-group{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1.2rem}
-    .cta{
-      display:inline-block;background:linear-gradient(180deg,var(--primary),#0088b8);
-      color:#061019;padding:.95rem 1.4rem;border-radius:10px;font-weight:800;letter-spacing:.2px;
-      text-decoration:none;box-shadow:0 8px 20px rgba(0,174,239,.25);
-      transition:transform .15s ease, box-shadow .15s ease;
-    }
-    .cta:hover{transform:translateY(-1px);box-shadow:0 12px 24px rgba(0,174,239,.28)}
-    .cta:focus{outline:3px solid var(--focus);outline-offset:3px}
-
-    .cta-secondary{
-      display:inline-block;padding:.9rem 1.2rem;border-radius:10px;font-weight:700;letter-spacing:.2px;
+    /* Nav bar (buttons) */
+    .nav-bar{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:.8rem}
+    .btn{
+      display:inline-block;padding:.8rem 1.2rem;border-radius:10px;font-weight:700;
       text-decoration:none;border:1.5px solid var(--primary);color:var(--primary);background:#fff;
-      transition:transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease;
+      transition:all .15s ease;
     }
-    .cta-secondary:hover{transform:translateY(-1px);background:var(--primary);color:#fff;box-shadow:0 8px 20px rgba(0,174,239,.25)}
-    .cta-secondary:focus{outline:3px solid var(--focus);outline-offset:3px}
+    .btn:hover{background:var(--primary);color:#fff;box-shadow:0 6px 16px rgba(0,174,239,.25)}
+    .btn:focus{outline:3px solid var(--focus);outline-offset:3px}
+    .btn-current{
+      background:var(--primary);color:#fff;cursor:default;
+    }
 
     main{max-width:980px;margin:2rem auto;padding:0 1rem}
     section{margin:0 0 2rem}
@@ -94,24 +87,25 @@
   </style>
 </head>
 <body>
+  <a href="#main" class="sr-only-focusable">Skip to content</a>
+
   <header>
     <a href="/" class="brand" aria-label="VeyDigital home">
       <img src="assets/img/logotranparentoutlinetext.png" alt="VeyDigital Logo" loading="lazy">
     </a>
-
-    <!-- Navigation buttons -->
-    <div class="cta-group">
-      <a class="cta-secondary" href="/" aria-label="Back to Home">Home</a>
-      <a class="cta-secondary" href="/work.html" aria-label="See Our Work">Work</a>
-      <a class="cta-secondary" href="https://github.com/Vey27/veydigital-site" target="_blank" rel="noopener">README.md</a>
-    </div>
-
     <p>Our work shows how raw spreadsheets become strategy — clear dashboards, streamlined automation, and predictive analytics built for growth.</p>
+
+    <!-- Nav buttons under text (same as index.html) -->
+    <nav class="nav-bar" aria-label="Primary navigation">
+      <a class="btn" href="/" rel="noopener">🏠 Home</a>
+      <a class="btn" href="https://github.com/Vey27/veydigital-site" target="_blank" rel="noopener">📄 README</a>
+      <span class="btn btn-current" aria-current="page">🧰 Work</span>
+    </nav>
   </header>
 
   <main id="main">
     <section class="grid">
-      <article class="card">
+      <article class="card" data-reveal>
         <h2>Revenue &amp; Churn Overview</h2>
         <p class="kicker">MRR/ARR, net/gross churn, retention cohorts, leading indicators, commentary.</p>
         <ul class="list">
@@ -121,7 +115,7 @@
         </ul>
       </article>
 
-      <article class="card">
+      <article class="card" data-reveal>
         <h2>Sales Performance</h2>
         <p class="kicker">Pipeline health, conversion rates, cycle time, and rep performance.</p>
         <ul class="list">
@@ -131,7 +125,7 @@
         </ul>
       </article>
 
-      <article class="card">
+      <article class="card" data-reveal>
         <h2>Unit Economics</h2>
         <p class="kicker">Gross margin, CAC/LTV, payback period, efficiency ratios.</p>
         <ul class="list">
@@ -141,7 +135,7 @@
         </ul>
       </article>
 
-      <article class="card">
+      <article class="card" data-reveal>
         <h2>Forecast &amp; Scenarios</h2>
         <p class="kicker">12–18 month forecast with what-if pricing &amp; expansion simulations.</p>
         <ul class="list">
@@ -154,7 +148,27 @@
   </main>
 
   <footer>
-    <p>© 2025 <strong>VeyDigital</strong>. Making data work for you — clear, simple, and built for growth.</p>
+    <p>© 2025 <strong>VeyDigital™</strong>. Making data work for you — clear, simple, and built for growth.</p>
   </footer>
+
+  <script>
+    (function(){
+      const entriesToObserve = document.querySelectorAll('[data-reveal]');
+      if (!('IntersectionObserver' in window) || entriesToObserve.length === 0) {
+        entriesToObserve.forEach(el => el.classList.add('reveal-in'));
+        return;
+      }
+      const io = new IntersectionObserver((entries)=>{
+        entries.forEach(e=>{
+          if(e.isIntersecting){
+            e.target.classList.add('reveal-in');
+            io.unobserve(e.target);
+          }
+        });
+      }, {threshold:.12});
+      entriesToObserve.forEach(el=> io.observe(el));
+    })();
+  </script>
+  <noscript><style>[data-reveal]{opacity:1;transform:none}</style></noscript>
 </body>
 </html>
