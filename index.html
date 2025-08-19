@@ -6,21 +6,21 @@
   <title>VeyDigital™ | AI Dashboards, Automation & Predictive Analytics</title>
   <meta name="description" content="I design AI dashboards, workflow automation, and predictive analytics that turn raw data into clear, fast decisions for your team." />
   <link rel="canonical" href="https://veydigital.com/" />
-  <meta name="theme-color" content="#0D1B2A" />
+  <meta name="theme-color" content="#000000" />
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
   <!-- Favicon / Icons -->
   <link rel="icon" href="assets/img/veydigitalLogo_background.png" type="image/png" />
   <link rel="apple-touch-icon" href="assets/img/veydigitalLogo_background.png" />
 
-  <!-- Social previews -->
+  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="VeyDigital — AI Dashboards, Automation & Analytics" />
   <meta property="og:description" content="From raw data to clear decisions with speed and accuracy." />
   <meta property="og:url" content="https://veydigital.com/" />
-  <meta property="og:image" content="https://veydigital.com/og-image.jpg" />
+  <meta property="og:image" content="https://veydigital.com/assets/img/veydigitalLogo_background.png" />
 
-  <!-- Allow inline styles/scripts used below -->
+  <!-- Content Security Policy -->
   <meta http-equiv="Content-Security-Policy"
         content="default-src 'self'; img-src 'self' https: data:;
                  script-src 'self' 'unsafe-inline';
@@ -35,9 +35,32 @@
     }
     *{box-sizing:border-box}
     body{margin:0;font-family:Arial, Helvetica, sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
-    header{background:#0D1B2A;color:#fff;text-align:center;padding:3rem 1rem;position:relative;overflow:hidden}
-    header .brand img{height:80px;width:auto;margin-bottom:1rem;display:block;margin-left:auto;margin-right:auto}
-    header p{margin:.8rem auto 0;max-width:60ch;color:#E6EEF8;font-size:1.2rem;font-weight:300}
+
+    /* Header fix */
+    header{
+      background:#000000; /* pure black background */
+      color:#fff;
+      text-align:center;
+      padding:3rem 1rem;
+      position:relative;
+      overflow:hidden;
+    }
+    header .brand img{
+      height:160px; /* bigger logo */
+      width:auto;
+      margin-bottom:1rem;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    header p{
+      margin:.8rem auto 0;
+      max-width:60ch;
+      color:#E6EEF8;
+      font-size:1.2rem;
+      font-weight:300;
+    }
+
     .cta{display:inline-block;background:linear-gradient(180deg,var(--primary),#0088b8);color:#061019;padding:.95rem 1.4rem;border-radius:10px;font-weight:800;letter-spacing:.2px;text-decoration:none;box-shadow:0 8px 20px rgba(0,174,239,.25);transition:transform .15s ease, box-shadow .15s ease}
     .cta:hover{transform:translateY(-1px);box-shadow:0 12px 24px rgba(0,174,239,.28)}
     .cta:focus{outline:3px solid var(--focus);outline-offset:3px}
@@ -56,7 +79,7 @@
     .list li{margin:.4rem 0}
     .kicker{color:var(--muted);font-size:.95rem;font-weight:500}
 
-    footer{background:#0D1B2A;color:#fff;text-align:center;padding:1rem;margin-top:2.5rem;font-size:.95rem}
+    footer{background:#000000;color:#fff;text-align:center;padding:1rem;margin-top:2.5rem;font-size:.95rem}
     footer strong{color:var(--accent)}
     a{color:var(--primary)}
     a:focus{outline:3px solid var(--focus);outline-offset:3px}
