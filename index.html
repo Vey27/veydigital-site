@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VeyDigital — From Data to Decisions</title>
-  <meta name="description" content="VeyDigital helps organizations turn raw data into clear decisions with dashboards, automation, and predictive analytics." />
-  <link rel="canonical" href="https://veydigital.com/index.html" />
+  <title>VeyDigital™ | AI Dashboards, Automation & Predictive Analytics</title>
+  <meta name="description" content="I design AI dashboards, workflow automation, and predictive analytics that turn raw data into clear, fast decisions for your team." />
+  <link rel="canonical" href="https://veydigital.com/" />
   <meta name="theme-color" content="#000000" />
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
@@ -15,92 +15,80 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="VeyDigital — From Data to Decisions" />
-  <meta property="og:description" content="Modern AI dashboards, workflow automation, and predictive analytics." />
-  <meta property="og:url" content="https://veydigital.com" />
-  <meta property="og:image" content="https://veydigital.com/assets/img/logotranparentoutlinetext.png" />
+  <meta property="og:title" content="VeyDigital — AI Dashboards, Automation & Analytics" />
+  <meta property="og:description" content="From raw data to clear decisions with speed and accuracy." />
+  <meta property="og:url" content="https://veydigital.com/" />
+  <meta property="og:image" content="https://veydigital.com/assets/img/logotranparentoutlinetext.png" type="image/png" />
 
-  <!-- Styles -->
+  <!-- (Optional) CSP -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' https: data:;
+                 script-src 'self' 'unsafe-inline';
+                 style-src 'self' 'unsafe-inline';
+                 connect-src 'self'; frame-src https://calendly.com;">
+
   <style>
-    :root {
-      --ink:#0D1B2A; --bg:#f9fbfd; --primary:#00AEEF; --accent:#FFC857;
-      --card:#ffffff; --shadow:0 10px 30px rgba(0,0,0,.08);
+    :root{
+      --ink:#0D1B2A; --bg:#f9fbfd; --primary:#00AEEF; --accent:#FFC857; --muted:#4B5B6E;
+      --card:#ffffff; --shadow:0 10px 30px rgba(0,0,0,.08); --radius:14px; --focus:#94d9ff;
     }
     *{box-sizing:border-box}
     body{margin:0;font-family:Arial, Helvetica, sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
 
-    header {
-      background:#000;
-      color:#fff;
-      text-align:center;
-      padding:2rem 1rem 3rem;
+    /* Header */
+    header{
+      background:#000; color:#fff; text-align:center;
+      padding:2.5rem 1rem 2rem; position:relative; overflow:hidden;
     }
-    header .brand img {
-      height:200px;
-      width:auto;
-      margin:0 auto 1rem;
-      display:block;
+    header .brand img{
+      height:200px; width:auto; display:block; margin:0 auto 1rem;
     }
-    header p {
-      margin:.8rem auto 0;
-      max-width:60ch;
-      color:#E6EEF8;
-      font-size:1.1rem;
-      font-weight:300;
+    header p{
+      margin:.5rem auto 0; max-width:60ch; color:#E6EEF8; font-size:1.1rem; font-weight:300;
     }
 
-    /* Nav bar */
-    .nav-bar {
-      display:flex;
-      justify-content:center;
-      gap:.8rem;
-      margin:1rem 0 0;
-      flex-wrap:wrap;
+    /* Top nav buttons (match work.html) */
+    .nav-bar{display:flex; gap:.8rem; justify-content:center; flex-wrap:wrap; margin:1rem 0 0}
+    .btn{
+      padding:.6rem 1rem; border-radius:8px; font-weight:600; text-decoration:none;
+      border:1.5px solid var(--primary); color:var(--primary); background:#fff; transition:.2s;
     }
-    .btn {
-      padding:.6rem 1rem;
-      border-radius:8px;
-      font-weight:600;
-      text-decoration:none;
-      border:1.5px solid var(--primary);
-      color:var(--primary);
-      background:#fff;
-      transition:.2s;
-    }
-    .btn:hover {background:var(--primary);color:#fff}
-    .btn-current {
-      background:var(--primary);
-      color:#fff;
-      cursor:default;
-    }
+    .btn:hover{background:var(--primary); color:#fff}
+    .btn-current{background:var(--primary); color:#fff; cursor:default}
 
-    main{max-width:980px;margin:2rem auto;padding:0 1rem}
+    /* Content */
+    main{max-width:980px; margin:2rem auto; padding:0 1rem}
     section{margin:0 0 2rem}
-    h2{font-size:1.8rem;color:var(--primary);margin:0 0 .6rem;display:inline-block;border-bottom:3px solid var(--accent);padding-bottom:.25rem}
-    p{margin:.6rem 0 1.2rem;font-size:1.05rem;color:var(--ink)}
+    h2{font-size:1.6rem; color:var(--primary); margin:0 0 .6rem; display:inline-block; border-bottom:3px solid var(--accent); padding-bottom:.25rem}
+    .grid{display:grid; gap:1rem}
+    @media (min-width:800px){.grid{grid-template-columns:1fr 1fr}}
+    .card{background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:1.2rem}
+    .list{margin:.2rem 0 0; padding-left:1.1rem}
+    .list li{margin:.4rem 0}
+    .kicker{color:var(--muted); font-size:.95rem; font-weight:500}
 
-    footer {
-      background:#000;
-      color:#fff;
-      text-align:center;
-      padding:2rem 1rem;
-      margin-top:2.5rem;
-      font-size:.95rem;
+    /* Footer */
+    footer{background:#000; color:#fff; text-align:center; padding:1.25rem; margin-top:2.5rem; font-size:.95rem}
+    footer strong{color:var(--accent)}
+    .cta{
+      display:inline-block; background:linear-gradient(180deg,var(--primary),#0088b8); color:#fff;
+      padding:.9rem 1.4rem; border-radius:10px; font-weight:700; text-decoration:none;
+      box-shadow:0 8px 20px rgba(0,174,239,.25); transition:.2s;
     }
-    .cta {
-      background:linear-gradient(180deg,var(--primary),#0088b8);
-      color:#fff;
-      padding:.9rem 1.4rem;
-      border-radius:10px;
-      font-weight:700;
-      text-decoration:none;
-      box-shadow:0 8px 20px rgba(0,174,239,.25);
-      transition:.2s;
+    .cta:hover{transform:translateY(-1px); box-shadow:0 12px 24px rgba(0,174,239,.28)}
+
+    /* Reveal */
+    [data-reveal]{opacity:.001; transform:translateY(12px); transition:opacity .6s ease, transform .6s ease}
+    .reveal-in{opacity:1 !important; transform:translateY(0) !important}
+    @media (prefers-reduced-motion: reduce){
+      [data-reveal]{opacity:1; transform:none; transition:none}
+      .btn,.cta{transition:none}
     }
-    .cta:hover{transform:translateY(-1px);box-shadow:0 12px 24px rgba(0,174,239,.28)}
   </style>
 </head>
 <body>
+  <a href="#main" class="sr-only-focusable" style="position:absolute;left:-9999px">Skip to content</a>
+
   <header>
     <!-- Logo -->
     <a href="/" class="brand" aria-label="VeyDigital home">
@@ -108,25 +96,84 @@
     </a>
     <p>From spreadsheets to strategy — I deliver AI dashboards, automation, and predictive insights that give leaders answers fast.</p>
 
-    <!-- Navigation (same as work.html) -->
-    <nav class="nav-bar">
-      <span class="btn btn-current">🏠 Home</span>
-      <a class="btn" href="https://github.com/Vey27/veydigital-site" target="_blank">📄 README</a>
-      <a class="btn" href="/work.html">🧰 Work</a>
+    <!-- Three buttons under the logo (same as work.html) -->
+    <nav class="nav-bar" aria-label="Primary navigation">
+      <span class="btn btn-current" aria-current="page">🏠 Home</span>
+      <a class="btn" href="https://github.com/Vey27/veydigital-site" target="_blank" rel="noopener">📄 README</a>
+      <a class="btn" href="/work.html" rel="noopener">🧰 Work</a>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Welcome to VeyDigital</h2>
-      <p>We help organizations move beyond spreadsheets and scattered reports. Our services transform raw data into clear decisions through modern dashboards, automated workflows, and predictive analytics.</p>
-      <p>Explore our <a href="/work.html">sample dashboards</a> to see the type of business clarity we deliver.</p>
+  <main id="main">
+    <section class="grid">
+      <article class="card" data-reveal>
+        <h2>Dashboards That Speak Clearly</h2>
+        <p class="kicker">Numbers turned into stories your team can act on.</p>
+        <ul class="list">
+          <li>One clear view of sales, revenue, churn, and performance.</li>
+          <li>AI highlights trends and explains the “why” in plain language.</li>
+        </ul>
+      </article>
+
+      <article class="card" data-reveal>
+        <h2>Automation That Frees Time</h2>
+        <p class="kicker">Everyday tasks off your plate, results on autopilot.</p>
+        <ul class="list">
+          <li>Smoother approvals, onboarding, and recurring tasks.</li>
+          <li>Natural-language triggers that feel effortless.</li>
+        </ul>
+      </article>
+
+      <article class="card" data-reveal>
+        <h2>Analytics That Predict Growth</h2>
+        <p class="kicker">Clarity today, foresight for tomorrow.</p>
+        <ul class="list">
+          <li>Anticipate churn and customer lifetime value with accuracy.</li>
+          <li>Test pricing, product mix, and growth strategies before rollout.</li>
+        </ul>
+      </article>
+
+      <article class="card" data-reveal>
+        <h2>Ongoing Support That Keeps You Ahead</h2>
+        <p class="kicker">Partnership that adapts as your business evolves.</p>
+        <ul class="list">
+          <li>Monthly tweaks as your metrics evolve.</li>
+          <li>Quarterly reviews to stay aligned with goals.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card" data-reveal>
+      <h2>Outcomes You’ll See</h2>
+      <ul class="list">
+        <li>Decisions made faster, with fewer spreadsheets.</li>
+        <li>Metrics leadership can act on immediately.</li>
+        <li>Forecasts that give you a head start on growth.</li>
+      </ul>
+      <p class="kicker" style="margin-top:.6rem">Every project includes a clean handoff, live training, and clear logic behind every metric.</p>
+    </section>
+
+    <section class="card" data-reveal>
+      <h2>Let’s Talk</h2>
+      <p>It starts with a quick conversation. Share your goals and I’ll design a custom 2–6 week roadmap with milestones that match your priorities.</p>
+      <p>Email: <a href="mailto:info@veydigital.com">info@veydigital.com</a></p>
     </section>
   </main>
 
   <footer>
-    <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=homepage" target="_blank">Book a free discovery call</a>
-    <p>© 2025 <strong>VeyDigital™</strong>. Making data work for you — clear, simple, and built for growth.</p>
+    <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=homepage" target="_blank" rel="noopener">Book a free discovery call</a>
+    <p style="margin-top:1rem">© 2025 <strong>VeyDigital™</strong>. Making data work for you — clear, simple, and built for growth.</p>
   </footer>
+
+  <script>
+    // Reveal-on-scroll
+    (function(){
+      const io = new IntersectionObserver((entries)=>{
+        entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('reveal-in'); io.unobserve(e.target); } });
+      }, {threshold:.12});
+      document.querySelectorAll('[data-reveal]').forEach(el=> io.observe(el));
+    })();
+  </script>
+  <noscript><style>[data-reveal]{opacity:1;transform:none}</style></noscript>
 </body>
 </html>
