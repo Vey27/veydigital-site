@@ -7,13 +7,6 @@
     helping organizations turn raw data into <strong>clear, confident decisions</strong>.
   </p>
 
-
-
-<p align="center">
-  Modern AI dashboards, workflow automation, and predictive analytics —  
-  helping organizations turn raw data into <strong>clear, confident decisions</strong>.
-</p>
-
 ---
 <header>
 ## 🌐 Explore
