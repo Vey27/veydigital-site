@@ -8,15 +8,7 @@
   helping organizations turn raw data into <strong>clear, confident decisions</strong>.
 </p>
 
-    <!-- Three buttons under the logo (same as work.html) -->
-    <nav class="nav-bar" aria-label="Primary navigation">
-      <span class="btn btn-current" aria-current="page">🏠 Home</span>
-      <a class="btn" href="https://github.com/Vey27/veydigital-site" target="_blank" rel="noopener">📄 README</a>
-      <a class="btn" href="/work.html" rel="noopener">🧰 Work</a>
-    </nav>
-
 ---
-
 
 ## 🌐 Explore
 - 🏠 [Home](https://www.veydigital.com)  
