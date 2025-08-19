@@ -13,12 +13,6 @@ Modern AI dashboards, workflow automation, and predictive analytics — helping 
 
 ---
 
-<a class="repo-pill" href="https://github.com/Vey27/veydigital-site" target="_blank" rel="noopener" aria-label="Open GitHub repo (README.md) in a new tab">
-  📂 View Repo
-</a>
-
-
-
 ## What We Do
 - **Quick Insights Dashboard**: Track KPIs like sales, revenue, churn, and costs.  
 - **AI Workflow Automation**: Cut manual processes in half with automated workflows.  
