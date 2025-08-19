@@ -70,7 +70,13 @@
 
 ---
 
-## ⚖️ License
-This project is licensed under the **MIT License** — see [LICENSE](LICENSE).  
-</header>
-© **VeyDigital** · Built for speed, accuracy, and growth.
+<h2 style="text-align:center;color:#0D1B2A;">⚖️ License</h2>
+<p style="text-align:center;">
+  This project is licensed under the <strong>MIT License</strong> — see 
+  <a href="LICENSE" style="color:#00AEEF;">LICENSE</a>.
+</p>
+
+<footer style="background:#000;color:#fff;text-align:center;padding:1rem;margin-top:2rem;font-size:.95rem;">
+  © <strong>VeyDigital</strong> · Built for speed, accuracy, and growth.
+</footer>
+
