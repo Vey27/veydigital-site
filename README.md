@@ -1,11 +1,25 @@
 <p align="center">
   <img src="assets/img/logotranparentoutlinetext.png" alt="VeyDigital Logo" width="300"/>
 </p>
-
-<p align="center">
+ <header>
+    <!-- Logo -->
+    <a href="/" class="brand" aria-label="VeyDigital home">
+      <img src="assets/img/logotranparentoutlinetext.png" alt="VeyDigital Logo" loading="lazy">
+    </a>
+  <p align="center">
   Modern AI dashboards, workflow automation, and predictive analytics —  
   helping organizations turn raw data into <strong>clear, confident decisions</strong>.
 </p>
+
+    <!-- Three buttons under the logo (same as work.html) -->
+    <nav class="nav-bar" aria-label="Primary navigation">
+      <span class="btn btn-current" aria-current="page">🏠 Home</span>
+      <a class="btn" href="https://github.com/Vey27/veydigital-site" target="_blank" rel="noopener">📄 README</a>
+      <a class="btn" href="/work.html" rel="noopener">🧰 Work</a>
+    </nav>
+  </header>
+
+
 
 ---
 
