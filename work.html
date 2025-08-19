@@ -9,9 +9,11 @@
   <meta name="theme-color" content="#000000" />
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
-  <!-- Icons -->
+  <!-- Icons (same as index.html) -->
   <link rel="icon" href="assets/img/logotranparentoutlinetext.png" type="image/png" />
-  <link rel="apple-touch-icon" href="assets/img/logoblackground.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logotranparentoutlinetext.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logotranparentoutlinetext.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logotranparentoutlinetext.png" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -97,7 +99,7 @@
       <img src="assets/img/logotranparentoutlinetext.png" alt="VeyDigital Logo" loading="lazy">
     </a>
 
-    <!-- Navigation buttons (same as index.html) -->
+    <!-- Navigation buttons -->
     <div class="cta-group">
       <a class="cta-secondary" href="/" aria-label="Back to Home">Home</a>
       <a class="cta-secondary" href="/work.html" aria-label="See Our Work">Work</a>
@@ -109,7 +111,7 @@
 
   <main id="main">
     <section class="grid">
-      <article class="card" data-reveal>
+      <article class="card">
         <h2>Revenue &amp; Churn Overview</h2>
         <p class="kicker">MRR/ARR, net/gross churn, retention cohorts, leading indicators, commentary.</p>
         <ul class="list">
@@ -119,7 +121,7 @@
         </ul>
       </article>
 
-      <article class="card" data-reveal>
+      <article class="card">
         <h2>Sales Performance</h2>
         <p class="kicker">Pipeline health, conversion rates, cycle time, and rep performance.</p>
         <ul class="list">
@@ -129,7 +131,7 @@
         </ul>
       </article>
 
-      <article class="card" data-reveal>
+      <article class="card">
         <h2>Unit Economics</h2>
         <p class="kicker">Gross margin, CAC/LTV, payback period, efficiency ratios.</p>
         <ul class="list">
@@ -139,7 +141,7 @@
         </ul>
       </article>
 
-      <article class="card" data-reveal>
+      <article class="card">
         <h2>Forecast &amp; Scenarios</h2>
         <p class="kicker">12–18 month forecast with what-if pricing &amp; expansion simulations.</p>
         <ul class="list">
@@ -154,26 +156,5 @@
   <footer>
     <p>© 2025 <strong>VeyDigital™</strong>. Making data work for you — clear, simple, and built for growth.</p>
   </footer>
-
-  <script>
-    // Reveal-on-scroll
-    (function(){
-      const entriesToObserve = document.querySelectorAll('[data-reveal]');
-      if (!('IntersectionObserver' in window) || entriesToObserve.length === 0) {
-        entriesToObserve.forEach(el => el.classList.add('reveal-in'));
-        return;
-      }
-      const io = new IntersectionObserver((entries)=>{
-        entries.forEach(e=>{
-          if(e.isIntersecting){
-            e.target.classList.add('reveal-in');
-            io.unobserve(e.target);
-          }
-        });
-      }, {threshold:.12});
-      entriesToObserve.forEach(el=> io.observe(el));
-    })();
-  </script>
-  <noscript><style>[data-reveal]{opacity:1;transform:none}</style></noscript>
 </body>
 </html>
