@@ -38,16 +38,25 @@
   </script>
   
   <style>
-    :root{--ink:#0D1B2A;--bg:#f9fbfd;--primary:#00AEEF;--accent:#FFC857;--muted:#4B5B6E;--card:#fff;--shadow:0 10px 30px rgba(0,0,0,.08);--radius:14px;--focus:#94d9ff}
+    :root{
+      --ink:#0D1B2A;
+      --bg:#f9fbfd;
+      --primary:#00AEEF;
+      --accent:#FFC857;
+      --muted:#4B5B6E;
+      --card:#fff;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:14px;
+      --focus:#94d9ff
+    }
     *{box-sizing:border-box}
     body{margin:0;font-family:Arial, Helvetica, sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
-    header{background:#0D1B2A;color:#fff;text-align:center;padding:2.5rem 1rem}
-    header h1{margin:0;font-size:2.2rem}
-    header p{margin:.6rem auto 0;max-width:70ch;color:#E6EEF8}
-    .cta{display:inline-block;margin-top:1rem;background:linear-gradient(180deg,var(--primary),#0088b8);color:#061019;padding:.85rem 1.1rem;border-radius:10px;font-weight:800;text-decoration:none;box-shadow:0 8px 20px rgba(0,174,239,.25);transition:transform .15s ease, box-shadow .15s ease}
+    header{background:#000;color:#fff;text-align:center;padding:3rem 1rem}
+    header .brand img{height:240px;width:auto;margin:0 auto 1rem;display:block}
+    header p{margin:.6rem auto 1.5rem;max-width:70ch;color:#E6EEF8;font-size:1.25rem}
+    .cta{display:inline-block;margin:.5rem;background:linear-gradient(180deg,var(--primary),#0088b8);color:#fff;padding:.85rem 1.1rem;border-radius:10px;font-weight:700;text-decoration:none;box-shadow:0 8px 20px rgba(0,174,239,.25);transition:transform .15s ease, box-shadow .15s ease}
     .cta:hover{transform:translateY(-1px);box-shadow:0 12px 24px rgba(0,174,239,.28)}
-    .cta:focus{outline:3px solid var(--focus);outline-offset:3px}
-    .back{display:inline-block;margin-left:.6rem;color:#E6EEF8;opacity:.9}
+    .back{display:inline-block;margin:.5rem;color:#E6EEF8;opacity:.9;text-decoration:none}
     main{max-width:980px;margin:2rem auto;padding:0 1rem}
     .grid{display:grid;gap:1rem}
     @media(min-width:800px){.grid{grid-template-columns:1fr 1fr}}
@@ -58,8 +67,6 @@
     footer{background:#0D1B2A;color:#fff;text-align:center;padding:1.2rem 1rem;margin-top:2.5rem}
     .sr-only-focusable{position:absolute;left:-9999px;top:auto}
     .sr-only-focusable:focus{left:8px;top:8px;background:#fff;padding:.5rem;border:2px solid #000;z-index:9999}
-    
-    /* reveal */
     [data-reveal]{opacity:.001;transform:translateY(12px);transition:opacity .6s ease, transform .6s ease}
     .reveal-in{opacity:1 !important;transform:translateY(0) !important}
     @media (prefers-reduced-motion: reduce){[data-reveal]{opacity:1;transform:none;transition:none}.cta{transition:none}}
@@ -69,10 +76,12 @@
   <a href="#main" class="sr-only-focusable">Skip to content</a>
 
   <header>
-    <h1>Sample Dashboards</h1>
-    <p>Here are example KPI layouts I commonly deliver. Want a walkthrough tailored to your data?</p>
+    <a href="/" class="brand" aria-label="VeyDigital home">
+      <img src="assets/img/veydigital_logo_transparent_cropped.png" alt="VeyDigital Logo">
+    </a>
+    <p>Our work shows how raw spreadsheets become strategy — clear dashboards, streamlined automation, and predictive analytics built for growth.</p>
     <div>
-      <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=workpage" target="_blank" rel="noopener" aria-label="Book a tailored walkthrough on Calendly">Book a tailored walkthrough</a>
+      <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=workpage" target="_blank" rel="noopener">Book a free discovery call</a>
       <a class="back" href="/" aria-label="Back to homepage">Back to home</a>
     </div>
   </header>
@@ -111,7 +120,7 @@
 
       <article class="card" data-reveal>
         <h2>Forecast &amp; Scenarios</h2>
-        <p class="kicker">12–18 month forecast with what‑if pricing &amp; expansion simulations.</p>
+        <p class="kicker">12–18 month forecast with what-if pricing &amp; expansion simulations.</p>
         <ul class="list">
           <li>Base, stretch, and conservative scenarios.</li>
           <li>Price change vs. demand elasticity simulations.</li>
@@ -123,7 +132,7 @@
 
   <footer>
     <p>
-      <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=footer" target="_blank" rel="noopener" aria-label="Book a free discovery call on Calendly">Book a free discovery call</a>
+      <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=footer" target="_blank" rel="noopener">Book a free discovery call</a>
     </p>
     <p>© 2025 <strong>VeyDigital™</strong></p>
   </footer>
