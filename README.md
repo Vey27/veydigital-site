@@ -10,7 +10,6 @@ Modern AI dashboards, workflow automation, and predictive analytics — helping 
 
 ## 🌐 Links
 - **Website** → [www.veydigital.com](https://www.veydigital.com)  
-- **GitHub Repo (README.md)** → [veydigital-site](https://github.com/Vey27/veydigital-site)
 
 ---
 
@@ -64,15 +63,6 @@ Modern AI dashboards, workflow automation, and predictive analytics — helping 
 - `LICENSE` → Repository license information  
 
 ---
-<footer style="text-align:center; margin-top:40px; padding:20px; border-top:1px solid #eee; font-size:14px;">
-  <p>
-    <a href="https://www.veydigital.com" target="_blank">🌐 Website</a> | 
-    <a href="https://github.com/Vey27/veydigital-site" target="_blank">📂 GitHub Repo</a>
-  </p>
-  <p>
-    <img src="assets/img/logotranparentoutlinetext.png" alt="VeyDigital Logo" width="150">
-  </p>
-</footer>
 
 ## License
 This repository is licensed under the MIT License — see the LICENSE file for details.  
