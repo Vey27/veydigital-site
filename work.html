@@ -7,101 +7,123 @@
   <meta name="description" content="A few sample KPI layouts and metrics I commonly deliver — revenue & churn, sales performance, unit economics, and forecasting." />
   <link rel="canonical" href="https://veydigital.com/work.html" />
   <meta name="theme-color" content="#000000" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
-  <!-- Icons (match index.html) -->
+  <!-- Icons -->
   <link rel="icon" href="assets/img/logotranparentoutlinetext.png" type="image/png" />
   <link rel="apple-touch-icon" href="assets/img/logoblackground.png" />
 
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sample Dashboards — VeyDigital" />
+  <meta property="og:description" content="Example KPI layouts and metrics I deliver for clients." />
+  <meta property="og:url" content="https://veydigital.com/work.html" />
+  <meta property="og:image" content="https://veydigital.com/assets/img/logotranparentoutlinetext.png" />
+
+  <!-- Styles -->
   <style>
-    :root{
+    :root {
       --ink:#0D1B2A; --bg:#f9fbfd; --primary:#00AEEF; --accent:#FFC857; --muted:#4B5B6E;
       --card:#ffffff; --shadow:0 10px 30px rgba(0,0,0,.08); --radius:14px; --focus:#94d9ff;
     }
     *{box-sizing:border-box}
     body{margin:0;font-family:Arial, Helvetica, sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
 
-    /* Header (matches index.html) */
-    header{
-      background:#000; color:#fff; text-align:center; padding:2.5rem 1rem 2rem;
-      position:relative; overflow:hidden;
+    header {
+      background:#000;
+      color:#fff;
+      text-align:center;
+      padding:2rem 1rem 3rem;
+      position:relative;
     }
-    header .brand img{
-      height:200px; width:auto; display:block; margin:0 auto 1rem;
+    header .brand img {
+      height:200px;
+      width:auto;
+      margin:0 auto 1rem;
+      display:block;
     }
-    header p{
-      margin:.5rem auto 0; max-width:60ch; color:#E6EEF8; font-size:1.1rem; font-weight:300;
+    header p {
+      margin:.8rem auto 0;
+      max-width:60ch;
+      color:#E6EEF8;
+      font-size:1.1rem;
+      font-weight:300;
     }
 
-    /* Marketable nav buttons */
-    .nav-bar{display:flex; gap:.6rem; justify-content:center; flex-wrap:wrap; margin-top:1.2rem}
-    .btn{
-      display:inline-block; padding:.8rem 1.1rem; border-radius:10px; font-weight:700; letter-spacing:.2px;
-      text-decoration:none; transition:transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease, border-color .15s ease;
-      border:2px solid var(--primary); color:var(--primary); background:#fff;
-      box-shadow:0 6px 14px rgba(0,174,239,.15);
+    /* Nav bar */
+    .nav-bar {
+      display:flex;
+      justify-content:center;
+      gap:.8rem;
+      margin-bottom:1rem;
+      flex-wrap:wrap;
     }
-    .btn:hover{transform:translateY(-1px); background:var(--primary); color:#fff; box-shadow:0 10px 20px rgba(0,174,239,.22)}
-    .btn:focus{outline:3px solid var(--focus); outline-offset:3px}
-
-    /* Current page = solid primary */
-    .btn-current{
-      background:linear-gradient(180deg,var(--primary),#0088b8); color:#061019; border-color:#0088b8;
-      box-shadow:0 10px 22px rgba(0,174,239,.28);
+    .btn {
+      padding:.6rem 1rem;
+      border-radius:8px;
+      font-weight:600;
+      text-decoration:none;
+      border:1.5px solid var(--primary);
+      color:var(--primary);
+      background:#fff;
+      transition:.2s;
     }
-    .btn-current:hover{transform:translateY(-1px)}
+    .btn:hover {background:var(--primary);color:#fff}
+    .btn-current {
+      background:var(--primary);
+      color:#fff;
+      cursor:default;
+    }
 
-    /* Content */
-    main{max-width:980px; margin:2rem auto; padding:0 1rem}
+    main{max-width:980px;margin:2rem auto;padding:0 1rem}
     section{margin:0 0 2rem}
-    h2{font-size:1.6rem; color:var(--primary); margin:0 0 .6rem; display:inline-block; border-bottom:3px solid var(--accent); padding-bottom:.25rem}
-    .grid{display:grid; gap:1rem}
+    h2{font-size:1.6rem;color:var(--primary);margin:0 0 .6rem;display:inline-block;border-bottom:3px solid var(--accent);padding-bottom:.25rem}
+    .grid{display:grid;gap:1rem}
     @media (min-width:800px){.grid{grid-template-columns:1fr 1fr}}
-    .card{background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:1.2rem}
-    .list{margin:.2rem 0 0; padding-left:1.1rem}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.2rem}
+    .list{margin:.2rem 0 0;padding-left:1.1rem}
     .list li{margin:.4rem 0}
-    .kicker{color:var(--muted); font-size:.95rem; font-weight:500}
+    .kicker{color:var(--muted);font-size:.95rem;font-weight:500}
 
-    /* Footer */
-    footer{background:#000; color:#fff; text-align:center; padding:1.25rem; margin-top:2.5rem; font-size:.95rem}
-    footer strong{color:var(--accent)}
-    .cta-row{display:flex; gap:.6rem; justify-content:center; flex-wrap:wrap}
-    .cta{
-      display:inline-block; padding:.95rem 1.4rem; border-radius:10px; font-weight:800; letter-spacing:.2px; text-decoration:none;
-      background:linear-gradient(180deg,var(--primary),#0088b8); color:#061019;
+    footer {
+      background:#000;
+      color:#fff;
+      text-align:center;
+      padding:2rem 1rem;
+      margin-top:2.5rem;
+      font-size:.95rem;
+    }
+    .cta-row{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+    .cta {
+      background:linear-gradient(180deg,var(--primary),#0088b8);
+      color:#fff;
+      padding:.9rem 1.4rem;
+      border-radius:10px;
+      font-weight:700;
+      text-decoration:none;
       box-shadow:0 8px 20px rgba(0,174,239,.25);
-      transition:transform .15s ease, box-shadow .15s ease;
+      transition:.2s;
     }
-    .cta:hover{transform:translateY(-1px); box-shadow:0 12px 24px rgba(0,174,239,.28)}
-    a{color:var(--primary)}
-    a:focus{outline:3px solid var(--focus); outline-offset:3px}
-
-    /* Reveal */
-    [data-reveal]{opacity:.001; transform:translateY(12px); transition:opacity .6s ease, transform .6s ease}
-    .reveal-in{opacity:1 !important; transform:translateY(0) !important}
-    @media (prefers-reduced-motion: reduce){
-      [data-reveal]{opacity:1; transform:none; transition:none}
-      .btn,.cta{transition:none}
-    }
+    .cta:hover{transform:translateY(-1px);box-shadow:0 12px 24px rgba(0,174,239,.28)}
   </style>
 </head>
 <body>
-  <a href="#main" class="sr-only-focusable" style="position:absolute;left:-9999px">Skip to content</a>
-
   <header>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+      <a class="btn" href="/">🏠 Home</a>
+      <a class="btn" href="https://github.com/Vey27/veydigital-site" target="_blank">📄 README</a>
+      <span class="btn btn-current">🧰 Work</span>
+    </nav>
+
+    <!-- Logo + tagline -->
     <a href="/" class="brand" aria-label="VeyDigital home">
       <img src="assets/img/logotranparentoutlinetext.png" alt="VeyDigital Logo" loading="lazy">
     </a>
     <p>Our work shows how raw spreadsheets become strategy — clear dashboards, streamlined automation, and predictive analytics built for growth.</p>
-
-    <!-- TOP NAV: Home / README / Work (current) -->
-    <nav class="nav-bar" aria-label="Primary navigation">
-      <a class="btn" href="/" rel="noopener">🏠 Home</a>
-      <a class="btn" href="/readme.html" rel="noopener">📄 README</a>
-      <span class="btn btn-current" aria-current="page">🧰 Work</span>
-    </nav>
   </header>
 
-  <main id="main">
+  <main>
     <section class="grid">
       <article class="card" data-reveal>
         <h2>Revenue &amp; Churn Overview</h2>
@@ -135,7 +157,7 @@
 
       <article class="card" data-reveal>
         <h2>Forecast &amp; Scenarios</h2>
-        <p class="kicker">12–18 month forecast with what‑if pricing &amp; expansion simulations.</p>
+        <p class="kicker">12–18 month forecast with what-if pricing &amp; expansion simulations.</p>
         <ul class="list">
           <li>Base, stretch, and conservative scenarios.</li>
           <li>Price change vs. demand elasticity simulations.</li>
@@ -147,26 +169,11 @@
 
   <footer>
     <div class="cta-row">
-      <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=workpage" target="_blank" rel="noopener">Book a free discovery call</a>
-      <a class="btn" href="/" rel="noopener">🏠 Home</a>
-      <a class="btn" href="/readme.html" rel="noopener">📄 README</a>
+      <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=workpage" target="_blank">Book a free discovery call</a>
+      <a class="btn" href="/">🏠 Home</a>
+      <a class="btn" href="https://github.com/Vey27/veydigital-site" target="_blank">📄 README</a>
     </div>
-    <p style="margin-top:1rem">© 2025 <strong>VeyDigital™</strong>. Making data work for you — clear, simple, and built for growth.</p>
+    <p>© 2025 <strong>VeyDigital™</strong>. Making data work for you — clear, simple, and built for growth.</p>
   </footer>
-
-  <script>
-    // Reveal-on-scroll with graceful fallback
-    (function(){
-      const els = document.querySelectorAll('[data-reveal]');
-      if (!('IntersectionObserver' in window)) { els.forEach(el=>el.classList.add('reveal-in')); return; }
-      const io = new IntersectionObserver((entries)=>{
-        entries.forEach(e=>{
-          if(e.isIntersecting){ e.target.classList.add('reveal-in'); io.unobserve(e.target); }
-        });
-      }, {threshold:.12});
-      els.forEach(el=> io.observe(el));
-    })();
-  </script>
-  <noscript><style>[data-reveal]{opacity:1;transform:none}</style></noscript>
 </body>
 </html>
