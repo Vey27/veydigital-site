@@ -3,11 +3,12 @@
 Modern AI dashboards, workflow automation, and predictive analytics — helping organizations turn raw data into clear decisions with speed and accuracy.
 
 ---
+🌐 Website  
+[veydigital.com](https://www.veydigital.com)
 
-## 🌐 Website
+- [Home](https://www.veydigital.com)  
+- [Our Work](https://www.veydigital.com/work.html)
 
-- [Home (index.html)](https://veydigital.com/)
-- [Sample Dashboards (work.html)](https://veydigital.com/work.html)
 
 ---
 
