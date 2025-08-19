@@ -1,13 +1,13 @@
 <script>
   async function loadReadme(){
-    try{
-      const res = await fetch('/README.md', {cache:'no-store'});
-      if(!res.ok) throw new Error('Fetch failed');
+    try {
+      const res = await fetch("https://raw.githubusercontent.com/Vey27/veydigital/main/README.md");
+      if(!res.ok) throw new Error("Could not fetch README");
       const md = await res.text();
-      document.getElementById('readme-body').innerHTML = marked.parse(md);
-    }catch(e){
-      document.getElementById('readme-body').innerHTML =
-        '<p>Could not load README.md. View it on <a href="https://github.com/Vey27/veydigital">GitHub</a>.</p>';
+      document.getElementById("readme-body").innerHTML = marked.parse(md);
+    } catch(e) {
+      document.getElementById("readme-body").innerHTML =
+        '<p>Could not load README. <a href="https://github.com/Vey27/veydigital" target="_blank">View on GitHub</a>.</p>';
     }
   }
   loadReadme();
