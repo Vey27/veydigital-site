@@ -1,50 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>VeyDigital</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #0D1B2A; }
-    header { padding: 1.5rem; text-align: center; }
-    header img { max-width: 240px; height: auto; }
-    section { padding: 2rem; max-width: 800px; margin: auto; }
-    h1, h2 { color: #0D1B2A; }
-    ul { line-height: 1.7; }
-
-    /* Floating repo link */
-    .repo-pill {
-      position: fixed; top: 14px; right: 14px; z-index: 9999;
-      background: #00AEEF; color: #061019; font-weight: 800;
-      padding: .5rem .85rem; border-radius: 9999px; text-decoration: none;
-      box-shadow: 0 6px 16px rgba(0,174,239,.25);
-      transition: transform 0.15s ease-in-out;
+<script>
+  async function loadReadme(){
+    try{
+      const res = await fetch('/README.md', {cache:'no-store'});
+      if(!res.ok) throw new Error('Fetch failed');
+      const md = await res.text();
+      document.getElementById('readme-body').innerHTML = marked.parse(md);
+    }catch(e){
+      document.getElementById('readme-body').innerHTML =
+        '<p>Could not load README.md. View it on <a href="https://github.com/Vey27/veydigital">GitHub</a>.</p>';
     }
-    .repo-pill:hover { transform: translateY(-1px); }
-    .repo-pill:focus { outline: 3px solid #94d9ff; outline-offset: 3px; }
-  </style>
-</head>
-<body>
-  <a class="repo-pill"
-     href="https://github.com/Vey27/veydigital-site"
-     target="_blank" rel="noopener"
-     aria-label="Open GitHub repo (README.md) in a new tab">
-    📂 View Repo
-  </a>
-
-  <header>
-    <img src="assets/img/logotranparentoutlinetext.png" alt="VeyDigital Logo">
-    <h1>Modern AI dashboards, workflow automation, and predictive analytics</h1>
-    <p>Helping organizations turn raw data into clear decisions with speed and accuracy.</p>
-  </header>
-
-  <section>
-    <h2>What We Do</h2>
-    <ul>
-      <li><strong>Quick Insights Dashboard:</strong> Track KPIs like sales, revenue, churn, and costs.</li>
-      <li><strong>AI Workflow Automation:</strong> Cut manual processes in half with automated workflows.</li>
-      <li><strong>Predictive Analytics for Growth:</strong> Forecast demand, churn, and customer lifetime value.</li>
-      <li><strong>VeyCare Subscription:</strong> Ongoing optimization of dashboards and automation.</li>
-    </ul>
-  </section>
-</body>
-</html>
+  }
+  loadReadme();
+</script>
