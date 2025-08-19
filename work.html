@@ -1,178 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sample Dashboards — VeyDigital</title>
-  <meta name="description" content="A few sample KPI layouts and metrics I commonly deliver — revenue & churn, sales performance, unit economics, and forecasting." />
-  <link rel="canonical" href="https://veydigital.com/work.html" />
-  <meta name="theme-color" content="#000000" />
-  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-
-  <!-- Icons -->
-  <link rel="icon" href="assets/img/logotranparentoutlinetext.png" type="image/png" />
-  <link rel="apple-touch-icon" href="assets/img/logotranparentoutlinetext.png" />
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sample Dashboards — VeyDigital" />
-  <meta property="og:description" content="Example KPI layouts and metrics I deliver for clients." />
-  <meta property="og:url" content="https://veydigital.com/work.html" />
-  <meta property="og:image" content="https://veydigital.com/assets/img/logotranparentoutlinetext.png" />
-
-  <!-- Content Security Policy -->
-  <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; img-src 'self' https: data:;
-                 script-src 'self' 'unsafe-inline';
-                 style-src 'self' 'unsafe-inline';
-                 connect-src 'self'; frame-src https://calendly.com;">
-
-  <!-- Styles (mirrors index.html) -->
+  <meta charset="UTF-8">
+  <title>VeyDigital — Work</title>
   <style>
-    :root{
-      --ink:#0D1B2A; --bg:#f9fbfd; --primary:#00AEEF; --accent:#FFC857; --muted:#4B5B6E;
-      --card:#ffffff; --shadow:0 10px 30px rgba(0,0,0,.08); --radius:14px; --focus:#94d9ff;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Arial, Helvetica, sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #0D1B2A; }
+    header { padding: 1.5rem; text-align: center; }
+    header img { max-width: 240px; height: auto; }
+    section { padding: 2rem; max-width: 900px; margin: auto; }
+    h1, h2 { color: #0D1B2A; }
+    ul { line-height: 1.7; }
 
-    /* Header — identical to index.html */
-    header{
-      background:#000000;
-      color:#fff;
-      text-align:center;
-      padding:3rem 1rem;
-      position:relative;
-      overflow:hidden;
+    /* Floating repo link */
+    .repo-pill {
+      position: fixed; top: 14px; right: 14px; z-index: 9999;
+      background: #00AEEF; color: #061019; font-weight: 800;
+      padding: .5rem .85rem; border-radius: 9999px; text-decoration: none;
+      box-shadow: 0 6px 16px rgba(0,174,239,.25);
+      transition: transform 0.15s ease-in-out;
     }
-    header .brand img{
-      height:240px;
-      width:auto;
-      margin-bottom:1rem;
-      display:block;
-      margin-left:auto;
-      margin-right:auto;
-    }
-    header p{
-      margin:.8rem auto 0;
-      max-width:60ch;
-      color:#E6EEF8;
-      font-size:1.2rem;
-      font-weight:300;
-    }
-
-    .cta{display:inline-block;background:linear-gradient(180deg,var(--primary),#0088b8);color:#061019;padding:.95rem 1.4rem;border-radius:10px;font-weight:800;letter-spacing:.2px;text-decoration:none;box-shadow:0 8px 20px rgba(0,174,239,.25);transition:transform .15s ease, box-shadow .15s ease}
-    .cta:hover{transform:translateY(-1px);box-shadow:0 12px 24px rgba(0,174,239,.28)}
-    .cta:focus{outline:3px solid var(--focus);outline-offset:3px}
-    .cta-group{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1.2rem}
-    .cta-secondary{display:inline-block;padding:.9rem 1.2rem;border-radius:10px;font-weight:700;letter-spacing:.2px;text-decoration:none;border:1.5px solid #E6EEF8;color:#E6EEF8;background:transparent;transition:transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease}
-    .cta-secondary:hover{transform:translateY(-1px);background:#e6eef81a;box-shadow:0 8px 20px rgba(255,255,255,.12)}
-    .cta-secondary:focus{outline:3px solid var(--focus);outline-offset:3px}
-
-    main{max-width:980px;margin:2rem auto;padding:0 1rem}
-    section{margin:0 0 2rem}
-    h2{font-size:1.6rem;color:var(--primary);margin:0 0 .6rem;display:inline-block;border-bottom:3px solid var(--accent);padding-bottom:.25rem}
-    .grid{display:grid;gap:1rem}
-    @media (min-width:800px){.grid{grid-template-columns:1fr 1fr}}
-    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.2rem}
-    .list{margin:.2rem 0 0;padding-left:1.1rem}
-    .list li{margin:.4rem 0}
-    .kicker{color:var(--muted);font-size:.95rem;font-weight:500}
-
-    /* Footer — identical to index.html */
-    footer{background:#000000;color:#fff;text-align:center;padding:1rem;margin-top:2.5rem;font-size:.95rem}
-    footer strong{color:#FFC857}
-    a{color:#00AEEF}
-    a:focus{outline:3px solid var(--focus);outline-offset:3px}
-
-    /* Accessibility & reveal */
-    .sr-only-focusable{position:absolute;left:-9999px;top:auto}
-    .sr-only-focusable:focus{left:8px;top:8px;background:#fff;padding:.5rem;border:2px solid #000;z-index:9999}
-    [data-reveal]{opacity:.001;transform:translateY(12px);transition:opacity .6s ease, transform .6s ease}
-    .reveal-in{opacity:1 !important;transform:translateY(0) !important}
-    @media (prefers-reduced-motion: reduce){
-      [data-reveal]{opacity:1;transform:none;transition:none}
-      .cta{transition:none}
-    }
+    .repo-pill:hover { transform: translateY(-1px); }
+    .repo-pill:focus { outline: 3px solid #94d9ff; outline-offset: 3px; }
   </style>
 </head>
 <body>
-  <a href="#main" class="sr-only-focusable">Skip to content</a>
+  <a class="repo-pill"
+     href="https://github.com/Vey27/veydigital-site"
+     target="_blank" rel="noopener"
+     aria-label="Open GitHub repo (README.md) in a new tab">
+    📂 View Repo
+  </a>
 
   <header>
-    <a href="/" class="brand" aria-label="VeyDigital home">
-      <img
-        src="assets/img/logotranparentoutlinetext.png"
-        alt="VeyDigital Logo"
-        onerror="this.onerror=null;this.src='assets/img/textoutline.png';"
-      >
-    </a>
-    <p>Our work shows how raw spreadsheets become strategy — clear dashboards, streamlined automation, and predictive analytics built for growth.</p>
-    <div class="cta-group">
-      <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=workpage" target="_blank" rel="noopener">Book a free discovery call</a>
-      <a class="cta-secondary" href="/index.html" aria-label="Back to Home">Back to Home</a>
-    </div>
+    <img src="assets/img/logotranparentoutlinetext.png" alt="VeyDigital Logo">
+    <h1>Our Work</h1>
+    <p>Examples of how raw spreadsheets become strategy — clear dashboards, streamlined automation, and predictive analytics built for growth.</p>
   </header>
 
-  <main id="main">
-    <section class="grid">
-      <article class="card" data-reveal>
-        <h2>Revenue &amp; Churn Overview</h2>
-        <p class="kicker">MRR/ARR, net/gross churn, retention cohorts, leading indicators, commentary.</p>
-        <ul class="list">
-          <li>Rolling 12-month trend with seasonality.</li>
-          <li>Cohort view of retention by signup month.</li>
-          <li>Churn drivers flagged with AI explanations.</li>
-        </ul>
-      </article>
+  <section>
+    <h2>Revenue & Churn Overview</h2>
+    <ul>
+      <li>MRR/ARR, net/gross churn, retention cohorts, leading indicators, commentary.</li>
+      <li>Rolling 12-month trend with seasonality.</li>
+      <li>Cohort view of retention by signup month.</li>
+      <li>Churn drivers flagged with AI explanations.</li>
+    </ul>
 
-      <article class="card" data-reveal>
-        <h2>Sales Performance</h2>
-        <p class="kicker">Pipeline health, conversion rates, cycle time, and rep performance.</p>
-        <ul class="list">
-          <li>Lead → MQL → SQL → Closed Won funnels.</li>
-          <li>Win-rate by segment and product line.</li>
-          <li>Forecast vs. actual with variance notes.</li>
-        </ul>
-      </article>
+    <h2>Sales Performance</h2>
+    <ul>
+      <li>Pipeline health, conversion rates, cycle time, and rep performance.</li>
+      <li>Lead → MQL → SQL → Closed Won funnels.</li>
+      <li>Win-rate by segment and product line.</li>
+      <li>Forecast vs. actual with variance notes.</li>
+    </ul>
 
-      <article class="card" data-reveal>
-        <h2>Unit Economics</h2>
-        <p class="kicker">Gross margin, CAC/LTV, payback period, efficiency ratios.</p>
-        <ul class="list">
-          <li>Blended vs. channel-specific CAC.</li>
-          <li>LTV by cohort with sensitivity bands.</li>
-          <li>Payback period heatmap by segment.</li>
-        </ul>
-      </article>
+    <h2>Unit Economics</h2>
+    <ul>
+      <li>Gross margin, CAC/LTV, payback period, efficiency ratios.</li>
+      <li>Blended vs. channel-specific CAC.</li>
+      <li>LTV by cohort with sensitivity bands.</li>
+      <li>Payback period heatmap by segment.</li>
+    </ul>
 
-      <article class="card" data-reveal>
-        <h2>Forecast &amp; Scenarios</h2>
-        <p class="kicker">12–18 month forecast with what‑if pricing &amp; expansion simulations.</p>
-        <ul class="list">
-          <li>Base, stretch, and conservative scenarios.</li>
-          <li>Price change vs. demand elasticity simulations.</li>
-          <li>Churn reduction impact on runway.</li>
-        </ul>
-      </article>
-    </section>
-  </main>
-
-  <footer>
-    <p>
-      <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=footer" target="_blank" rel="noopener">Book a free discovery call</a>
-    </p>
-    <p>© 2025 <strong>VeyDigital</strong>. Making data work for you — clear, simple, and built for growth.</p>
-  </footer>
-
-  <script>
-    (function(){
-      const io = new IntersectionObserver((entries)=>{
-        entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('reveal-in'); io.unobserve(e.target); } });
-      }, {threshold:.12});
-      document.querySelectorAll('[data-reveal]').forEach(el=> io.observe(el));
-    })();
-  </script>
-  <noscript><style>[data-reveal]{opacity:1;transform:none}</style></noscript>
+    <h2>Forecast & Scenarios</h2>
+    <ul>
+      <li>12–18 month forecast with what-if pricing & expansion simulations.</li>
+      <li>Base, stretch, and conservative scenarios.</li>
+      <li>Price change vs. demand elasticity simulations.</li>
+      <li>Churn reduction impact on runway.</li>
+    </ul>
+  </section>
 </body>
 </html>
