@@ -1,7 +1,7 @@
 # VeyDigital
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Vey27/veydigital-site/main/assets/img/vdLogo.png" alt="VeyDigital Logo" width="320"/>
+  <img src="https://raw.githubusercontent.com/Vey27/veydigital-site/main/assets/img/scaler4xtran.png" alt="VeyDigital Logo" width="320"/>
 </p>
 
 Modern AI dashboards, workflow automation, and predictive analytics — helping organizations turn raw data into clear decisions with speed and accuracy.
@@ -61,7 +61,7 @@ Modern AI dashboards, workflow automation, and predictive analytics.
 **Assets:**
 - Favicon → `/favicon.png`
 - Social Preview → `/og-image.jpg`
-- Logo → `assets/img/vdLogo.png` (transparent background)
+- Logo → `assets/img/scaler4xtran.png` (transparent background)
 
 ---
 
@@ -75,5 +75,6 @@ Modern AI dashboards, workflow automation, and predictive analytics.
 
 ## License
 This repository is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
 
 © VeyDigital
