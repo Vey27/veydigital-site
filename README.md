@@ -1,6 +1,17 @@
 <p align="center">
-  <img src="assets/img/logotranparentoutlinetext.png" alt="VeyDigital Logo" width="300"/>
-</p>
+    <img src="assets/img/logotranparentoutlinetext.png" alt="VeyDigital Logo" width="300"/>
+  </p>
+
+  <p style="color:#E6EEF8;font-size:1.2rem;max-width:60ch;margin:0 auto 1.5rem;font-weight:300;">
+    Modern AI dashboards, workflow automation, and predictive analytics —  
+    helping organizations turn raw data into <strong>clear, confident decisions</strong>.
+  </p>
+
+  <p align="center">
+    <a href="https://www.veydigital.com" style="background:#0D1B2A;color:#E6EEF8;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin:5px;">🏠 Home</a>
+    <a href="https://www.veydigital.com/work.html" style="background:#0D1B2A;color:#E6EEF8;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin:5px;">🧰 Work</a>
+    <a href="https://github.com/Vey27/veydigital-site" style="background:#0D1B2A;color:#E6EEF8;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin:5px;">📄 README</a>
+  </p>
 
 <header>
 
