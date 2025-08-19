@@ -2,8 +2,6 @@
   <img src="assets/img/logotranparentoutlinetext.png" alt="VeyDigital Logo" width="300"/>
 </p>
 
-<h1 align="center">🚀 VeyDigital™</h1>
-
 <p align="center">
   Modern AI dashboards, workflow automation, and predictive analytics —  
   helping organizations turn raw data into <strong>clear, confident decisions</strong>.
@@ -73,4 +71,4 @@
 ## ⚖️ License
 This project is licensed under the **MIT License** — see [LICENSE](LICENSE).  
 
-© **VeyDigital™** · Built for speed, accuracy, and growth.
+© **VeyDigital** · Built for speed, accuracy, and growth.
