@@ -75,4 +75,4 @@
 ## ⚖️ License
 This project is licensed under the **MIT License** — see [LICENSE](LICENSE).  
 
-© **VeyDigital™** · Built for speed, accuracy, and growth.
+© **VeyDigital** · Built for speed, accuracy, and growth.
