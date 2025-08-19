@@ -1,7 +1,7 @@
-# VeyDigital™
+# Beta
 
 <p align="center">
-  <img src="assets/img/textoutline.png" alt="VeyDigital Logo" width="300"/>
+  <img src="assets/img/logotranparentoutlinetext.png" alt="VeyDigital Logo" width="300"/>
 </p>
 
 Modern AI dashboards, workflow automation, and predictive analytics — helping organizations turn raw data into clear decisions with speed and accuracy.
