@@ -8,7 +8,7 @@
 
 ---
 <header>
-## 🌐 Explore
+##  🌐 Explore
 <p align="center">
   <a href="https://www.veydigital.com" style="background:#0D1B2A;color:#E6EEF8;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin:5px;">🏠 Home</a>
   <a href="https://www.veydigital.com/work.html" style="background:#0D1B2A;color:#E6EEF8;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin:5px;">🧰 Work</a>
