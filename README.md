@@ -72,16 +72,6 @@ Modern AI dashboards, workflow automation, and predictive analytics — helping 
 - `LICENSE` → Repository license information  
 
 ---
-<footer>
-  <p>
-    <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=footer" target="_blank" rel="noopener">Book a free discovery call</a>
-  </p>
-  <p style="margin-top:.4rem">
-    <a href="https://github.com/Vey27/veydigital-site" target="_blank" rel="noopener" aria-label="Open GitHub repo (README.md) in a new tab">📂 View Repo (README.md)</a>
-  </p>
-  <p>© 2025 <strong>VeyDigital™</strong>. Making data work for you — clear, simple, and built for growth.</p>
-</footer>
-
 
 ## License
 This repository is licensed under the MIT License — see the LICENSE file for details.  
