@@ -8,7 +8,14 @@
 </p>
 
 ---
-
+ <!-- Nav buttons under text (same as index.html) -->
+       <!-- Three buttons under the logo (same as work.html) -->
+    <nav class="nav-bar" aria-label="Primary navigation">
+      <span class="btn btn-current" aria-current="page">🏠 Home</span>
+      <a class="btn" href="https://github.com/Vey27/veydigital-site" target="_blank" rel="noopener">📄 README</a>
+      <a class="btn" href="/work.html" rel="noopener">🧰 Work</a>
+    </nav>
+  </header>
 ## 🌐 Explore
 - 🏠 [Home](https://www.veydigital.com)  
 - 🧰 [Work](https://www.veydigital.com/work.html)  
