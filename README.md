@@ -1,4 +1,4 @@
-# VeyDigital
+# VeyDigital Beta
 
 <p align="center">
   <img src="assets/img/textoutline.png" alt="VeyDigital Logo" width="320"/>
