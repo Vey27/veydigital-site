@@ -7,7 +7,7 @@
     helping organizations turn raw data into <strong>clear, confident decisions</strong>.
   </p>
 
-<header>
+
 
 <p align="center">
   Modern AI dashboards, workflow automation, and predictive analytics —  
@@ -15,7 +15,7 @@
 </p>
 
 ---
-
+<header>
 ## 🌐 Explore
 <p align="center">
   <a href="https://www.veydigital.com" style="background:#0D1B2A;color:#E6EEF8;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin:5px;">🏠 Home</a>
