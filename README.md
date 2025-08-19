@@ -13,6 +13,22 @@ Modern AI dashboards, workflow automation, and predictive analytics — helping 
 
 ---
 
+/* Floating repo link */
+.repo-pill{
+  position:fixed; top:14px; right:14px; z-index:9999;
+  background:#00AEEF; color:#061019; font-weight:800;
+  padding:.5rem .85rem; border-radius:9999px; text-decoration:none;
+  box-shadow:0 6px 16px rgba(0,174,239,.25);
+}
+.repo-pill:focus{outline:3px solid #94d9ff; outline-offset:3px}
+
+
+<a class="repo-pill" href="https://github.com/Vey27/veydigital-site" target="_blank" rel="noopener" aria-label="Open GitHub repo (README.md) in a new tab">
+  📂 View Repo
+</a>
+
+
+
 ## What We Do
 - **Quick Insights Dashboard**: Track KPIs like sales, revenue, churn, and costs.  
 - **AI Workflow Automation**: Cut manual processes in half with automated workflows.  
@@ -63,6 +79,26 @@ Modern AI dashboards, workflow automation, and predictive analytics — helping 
 - `LICENSE` → Repository license information  
 
 ---
+<footer>
+  <p>
+    <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=footer" target="_blank" rel="noopener">Book a free discovery call</a>
+  </p>
+  <p style="margin-top:.4rem">
+    <a href="https://github.com/Vey27/veydigital-site" target="_blank" rel="noopener" aria-label="Open GitHub repo (README.md) in a new tab">📂 View Repo (README.md)</a>
+  </p>
+  <p>© 2025 <strong>VeyDigital™</strong>. Making data work for you — clear, simple, and built for growth.</p>
+</footer>
+
+
+<footer style="text-align:center; margin-top:40px; padding:20px; border-top:1px solid #eee; font-size:14px;">
+  <p>
+    <a href="https://www.veydigital.com" target="_blank">🌐 Website</a> | 
+    <a href="https://github.com/Vey27/veydigital-site" target="_blank">📂 GitHub Repo</a>
+  </p>
+  <p>
+    <img src="assets/img/logotranparentoutlinetext.png" alt="VeyDigital Logo" width="150">
+  </p>
+</footer>
 
 ## License
 This repository is licensed under the MIT License — see the LICENSE file for details.  
