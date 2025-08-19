@@ -13,9 +13,6 @@ Modern AI dashboards, workflow automation, and predictive analytics — helping 
 
 ---
 
-.repo-pill:focus{outline:3px solid #94d9ff; outline-offset:3px}
-
-
 <a class="repo-pill" href="https://github.com/Vey27/veydigital-site" target="_blank" rel="noopener" aria-label="Open GitHub repo (README.md) in a new tab">
   📂 View Repo
 </a>
