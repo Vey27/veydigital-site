@@ -93,6 +93,14 @@
     footer strong{color:var(--accent)}
     a{color:var(--primary)}
     a:focus{outline:3px solid var(--focus);outline-offset:3px}
+
+    /* Reveal */
+    [data-reveal]{opacity:.001;transform:translateY(12px);transition:opacity .6s ease, transform .6s ease}
+    .reveal-in{opacity:1 !important;transform:translateY(0) !important}
+    @media (prefers-reduced-motion: reduce){
+      [data-reveal]{opacity:1;transform:none;transition:none}
+      .cta,.cta-secondary{transition:none}
+    }
   </style>
 </head>
 <body>
@@ -104,9 +112,9 @@
     </a>
     <p>Our work shows how raw spreadsheets become strategy — clear dashboards, streamlined automation, and predictive analytics built for growth.</p>
 
-    <!-- Header buttons: ONLY Back to README.md -->
+    <!-- Header button: ONLY Back to README (site page) -->
     <div class="cta-group">
-      <a class="cta-secondary" href="https://github.com/Vey27/veydigital/blob/main/README.md" target="_blank" rel="noopener">Back to README.md</a>
+      <a class="cta-secondary" href="/readme.html" aria-label="Back to README">Back to README.md</a>
     </div>
   </header>
 
@@ -155,7 +163,7 @@
   </main>
 
   <footer>
-    <!-- Footer buttons: Book call + Back to Home side-by-side -->
+    <!-- Footer buttons: Book call + Back to Home -->
     <div class="cta-group" style="margin-top:0">
       <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=footer" target="_blank" rel="noopener">Book a free discovery call</a>
       <a class="cta-secondary" href="/" aria-label="Back to Home" rel="noopener">Back to Home</a>
@@ -166,11 +174,8 @@
   <script>
     // Reveal-on-scroll with graceful fallback
     (function(){
-      const entriesToObserve = document.querySelectorAll('[data-reveal]');
-      if (!('IntersectionObserver' in window) || entriesToObserve.length === 0) {
-        entriesToObserve.forEach(el => el.classList.add('reveal-in'));
-        return;
-      }
+      const els = document.querySelectorAll('[data-reveal]');
+      if (!('IntersectionObserver' in window)) { els.forEach(el=>el.classList.add('reveal-in')); return; }
       const io = new IntersectionObserver((entries)=>{
         entries.forEach(e=>{
           if(e.isIntersecting){
@@ -179,7 +184,7 @@
           }
         });
       }, {threshold:.12});
-      entriesToObserve.forEach(el=> io.observe(el));
+      els.forEach(el=> io.observe(el));
     })();
   </script>
   <noscript><style>[data-reveal]{opacity:1;transform:none}</style></noscript>
