@@ -20,60 +20,60 @@
   <meta property="og:url" content="https://veydigital.com/work.html" />
   <meta property="og:image" content="https://veydigital.com/assets/img/logotranparentoutlinetext.png" />
 
+  <!-- CSP -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' https: data:;
+                 script-src 'self' 'unsafe-inline';
+                 style-src 'self' 'unsafe-inline';
+                 connect-src 'self'; frame-src https://calendly.com;">
+
   <!-- Styles -->
   <style>
-    :root {
+    :root{
       --ink:#0D1B2A; --bg:#f9fbfd; --primary:#00AEEF; --accent:#FFC857; --muted:#4B5B6E;
       --card:#ffffff; --shadow:0 10px 30px rgba(0,0,0,.08); --radius:14px; --focus:#94d9ff;
     }
     *{box-sizing:border-box}
     body{margin:0;font-family:Arial, Helvetica, sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
 
-    header {
+    header{
       background:#000;
       color:#fff;
       text-align:center;
-      padding:2rem 1rem 3rem;
-      position:relative;
+      padding:3rem 1rem 2rem;
     }
-    header .brand img {
-      height:200px;
+    header .brand img{
+      height:240px;
       width:auto;
       margin:0 auto 1rem;
       display:block;
     }
-    header p {
+    header p{
       margin:.8rem auto 0;
       max-width:60ch;
       color:#E6EEF8;
-      font-size:1.1rem;
+      font-size:1.2rem;
       font-weight:300;
     }
 
-    /* Nav bar */
-    .nav-bar {
-      display:flex;
-      justify-content:center;
-      gap:.8rem;
-      margin-bottom:1rem;
-      flex-wrap:wrap;
+    /* Buttons */
+    .cta-group{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1.2rem}
+    .cta{
+      display:inline-block;background:linear-gradient(180deg,var(--primary),#0088b8);
+      color:#061019;padding:.95rem 1.4rem;border-radius:10px;font-weight:800;letter-spacing:.2px;
+      text-decoration:none;box-shadow:0 8px 20px rgba(0,174,239,.25);
+      transition:transform .15s ease, box-shadow .15s ease;
     }
-    .btn {
-      padding:.6rem 1rem;
-      border-radius:8px;
-      font-weight:600;
-      text-decoration:none;
-      border:1.5px solid var(--primary);
-      color:var(--primary);
-      background:#fff;
-      transition:.2s;
+    .cta:hover{transform:translateY(-1px);box-shadow:0 12px 24px rgba(0,174,239,.28)}
+    .cta:focus{outline:3px solid var(--focus);outline-offset:3px}
+
+    .cta-secondary{
+      display:inline-block;padding:.9rem 1.2rem;border-radius:10px;font-weight:700;letter-spacing:.2px;
+      text-decoration:none;border:1.5px solid var(--primary);color:var(--primary);background:#fff;
+      transition:transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease;
     }
-    .btn:hover {background:var(--primary);color:#fff}
-    .btn-current {
-      background:var(--primary);
-      color:#fff;
-      cursor:default;
-    }
+    .cta-secondary:hover{transform:translateY(-1px);background:var(--primary);color:#fff;box-shadow:0 8px 20px rgba(0,174,239,.25)}
+    .cta-secondary:focus{outline:3px solid var(--focus);outline-offset:3px}
 
     main{max-width:980px;margin:2rem auto;padding:0 1rem}
     section{margin:0 0 2rem}
@@ -85,46 +85,31 @@
     .list li{margin:.4rem 0}
     .kicker{color:var(--muted);font-size:.95rem;font-weight:500}
 
-    footer {
-      background:#000;
-      color:#fff;
-      text-align:center;
-      padding:2rem 1rem;
-      margin-top:2.5rem;
-      font-size:.95rem;
-    }
-    .cta {
-      background:linear-gradient(180deg,var(--primary),#0088b8);
-      color:#fff;
-      padding:.9rem 1.4rem;
-      border-radius:10px;
-      font-weight:700;
-      text-decoration:none;
-      box-shadow:0 8px 20px rgba(0,174,239,.25);
-      transition:.2s;
-    }
-    .cta:hover{transform:translateY(-1px);box-shadow:0 12px 24px rgba(0,174,239,.28)}
+    footer{background:#000;color:#fff;text-align:center;padding:1.25rem;margin-top:2.5rem;font-size:.95rem}
+    footer strong{color:var(--accent)}
+    a{color:var(--primary)}
+    a:focus{outline:3px solid var(--focus);outline-offset:3px}
   </style>
 </head>
 <body>
   <header>
-    <!-- Navigation -->
-    <nav class="nav-bar">
-      <a class="btn" href="/">🏠 Home</a>
-      <a class="btn" href="https://github.com/Vey27/veydigital-site" target="_blank">📄 README</a>
-      <span class="btn btn-current">🧰 Work</span>
-    </nav>
-
-    <!-- Logo + tagline -->
     <a href="/" class="brand" aria-label="VeyDigital home">
       <img src="assets/img/logotranparentoutlinetext.png" alt="VeyDigital Logo" loading="lazy">
     </a>
+
+    <!-- Navigation buttons (same as index.html) -->
+    <div class="cta-group">
+      <a class="cta-secondary" href="/" aria-label="Back to Home">Home</a>
+      <a class="cta-secondary" href="/work.html" aria-label="See Our Work">Work</a>
+      <a class="cta-secondary" href="https://github.com/Vey27/veydigital-site" target="_blank" rel="noopener">README.md</a>
+    </div>
+
     <p>Our work shows how raw spreadsheets become strategy — clear dashboards, streamlined automation, and predictive analytics built for growth.</p>
   </header>
 
-  <main>
+  <main id="main">
     <section class="grid">
-      <article class="card">
+      <article class="card" data-reveal>
         <h2>Revenue &amp; Churn Overview</h2>
         <p class="kicker">MRR/ARR, net/gross churn, retention cohorts, leading indicators, commentary.</p>
         <ul class="list">
@@ -134,7 +119,7 @@
         </ul>
       </article>
 
-      <article class="card">
+      <article class="card" data-reveal>
         <h2>Sales Performance</h2>
         <p class="kicker">Pipeline health, conversion rates, cycle time, and rep performance.</p>
         <ul class="list">
@@ -144,7 +129,7 @@
         </ul>
       </article>
 
-      <article class="card">
+      <article class="card" data-reveal>
         <h2>Unit Economics</h2>
         <p class="kicker">Gross margin, CAC/LTV, payback period, efficiency ratios.</p>
         <ul class="list">
@@ -154,7 +139,7 @@
         </ul>
       </article>
 
-      <article class="card">
+      <article class="card" data-reveal>
         <h2>Forecast &amp; Scenarios</h2>
         <p class="kicker">12–18 month forecast with what-if pricing &amp; expansion simulations.</p>
         <ul class="list">
@@ -167,8 +152,28 @@
   </main>
 
   <footer>
-    <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=workpage" target="_blank">Book a free discovery call</a>
     <p>© 2025 <strong>VeyDigital™</strong>. Making data work for you — clear, simple, and built for growth.</p>
   </footer>
+
+  <script>
+    // Reveal-on-scroll
+    (function(){
+      const entriesToObserve = document.querySelectorAll('[data-reveal]');
+      if (!('IntersectionObserver' in window) || entriesToObserve.length === 0) {
+        entriesToObserve.forEach(el => el.classList.add('reveal-in'));
+        return;
+      }
+      const io = new IntersectionObserver((entries)=>{
+        entries.forEach(e=>{
+          if(e.isIntersecting){
+            e.target.classList.add('reveal-in');
+            io.unobserve(e.target);
+          }
+        });
+      }, {threshold:.12});
+      entriesToObserve.forEach(el=> io.observe(el));
+    })();
+  </script>
+  <noscript><style>[data-reveal]{opacity:1;transform:none}</style></noscript>
 </body>
 </html>
