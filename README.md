@@ -15,7 +15,7 @@
       <a class="btn" href="https://github.com/Vey27/veydigital-site" target="_blank" rel="noopener">📄 README</a>
       <a class="btn" href="/work.html" rel="noopener">🧰 Work</a>
     </nav>
-  </header>
+
 ## 🌐 Explore
 - 🏠 [Home](https://www.veydigital.com)  
 - 🧰 [Work](https://www.veydigital.com/work.html)  
