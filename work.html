@@ -13,7 +13,7 @@
   <link rel="icon" href="assets/img/logotranparentoutlinetext.png" type="image/png" />
   <link rel="apple-touch-icon" href="assets/img/logoblackground.png" />
 
-  <!-- Open Graph / Twitter -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Sample Dashboards — VeyDigital" />
   <meta property="og:description" content="Example KPI layouts and metrics I deliver for clients." />
@@ -36,7 +36,7 @@
     *{box-sizing:border-box}
     body{margin:0;font-family:Arial, Helvetica, sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
 
-    /* Header — identical to index.html */
+    /* Header — identical look to index.html */
     header{
       background:#000;
       color:#fff;
@@ -59,12 +59,23 @@
       font-weight:300;
     }
 
-    .cta{display:inline-block;background:linear-gradient(180deg,var(--primary),#0088b8);color:#061019;padding:.95rem 1.4rem;border-radius:10px;font-weight:800;letter-spacing:.2px;text-decoration:none;box-shadow:0 8px 20px rgba(0,174,239,.25);transition:transform .15s ease, box-shadow .15s ease}
+    /* Buttons */
+    .cta-group{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1.2rem}
+    .cta{
+      display:inline-block;background:linear-gradient(180deg,var(--primary),#0088b8);
+      color:#061019;padding:.95rem 1.4rem;border-radius:10px;font-weight:800;letter-spacing:.2px;
+      text-decoration:none;box-shadow:0 8px 20px rgba(0,174,239,.25);
+      transition:transform .15s ease, box-shadow .15s ease;
+    }
     .cta:hover{transform:translateY(-1px);box-shadow:0 12px 24px rgba(0,174,239,.28)}
     .cta:focus{outline:3px solid var(--focus);outline-offset:3px}
-    .cta-group{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1.2rem}
-    .cta-secondary{display:inline-block;padding:.9rem 1.2rem;border-radius:10px;font-weight:700;letter-spacing:.2px;text-decoration:none;border:1.5px solid #E6EEF8;color:#E6EEF8;background:transparent;transition:transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease}
-    .cta-secondary:hover{transform:translateY(-1px);background:#e6eef81a;box-shadow:0 8px 20px rgba(255,255,255,.12)}
+
+    .cta-secondary{
+      display:inline-block;padding:.9rem 1.2rem;border-radius:10px;font-weight:700;letter-spacing:.2px;
+      text-decoration:none;border:1.5px solid var(--primary);color:var(--primary);background:#fff;
+      transition:transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease;
+    }
+    .cta-secondary:hover{transform:translateY(-1px);background:var(--primary);color:#fff;box-shadow:0 8px 20px rgba(0,174,239,.25)}
     .cta-secondary:focus{outline:3px solid var(--focus);outline-offset:3px}
 
     main{max-width:980px;margin:2rem auto;padding:0 1rem}
@@ -77,21 +88,11 @@
     .list li{margin:.4rem 0}
     .kicker{color:var(--muted);font-size:.95rem;font-weight:500}
 
-    /* Footer — identical to index.html */
-    footer{background:#000;color:#fff;text-align:center;padding:1rem;margin-top:2.5rem;font-size:.95rem}
+    /* Footer — matches index.html */
+    footer{background:#000;color:#fff;text-align:center;padding:1.25rem;margin-top:2.5rem;font-size:.95rem}
     footer strong{color:var(--accent)}
     a{color:var(--primary)}
     a:focus{outline:3px solid var(--focus);outline-offset:3px}
-
-    /* Accessibility & reveal */
-    .sr-only-focusable{position:absolute;left:-9999px;top:auto}
-    .sr-only-focusable:focus{left:8px;top:8px;background:#fff;padding:.5rem;border:2px solid #000;z-index:9999}
-    [data-reveal]{opacity:.001;transform:translateY(12px);transition:opacity .6s ease, transform .6s ease}
-    .reveal-in{opacity:1 !important;transform:translateY(0) !important}
-    @media (prefers-reduced-motion: reduce){
-      [data-reveal]{opacity:1;transform:none;transition:none}
-      .cta{transition:none}
-    }
   </style>
 </head>
 <body>
@@ -102,12 +103,9 @@
       <img src="assets/img/logotranparentoutlinetext.png" alt="VeyDigital Logo" loading="lazy">
     </a>
     <p>Our work shows how raw spreadsheets become strategy — clear dashboards, streamlined automation, and predictive analytics built for growth.</p>
+
+    <!-- Header buttons: ONLY Back to README.md -->
     <div class="cta-group">
-      <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=workpage" target="_blank" rel="noopener">Book a free discovery call</a>
-      <a class="cta-secondary" href="/" aria-label="Back to Home" rel="noopener">Back to Home</a>
-      <!-- README button (opens GitHub README in a new tab). 
-           If you prefer the raw file, change href to:
-           https://raw.githubusercontent.com/Vey27/veydigital/main/README.md -->
       <a class="cta-secondary" href="https://github.com/Vey27/veydigital/blob/main/README.md" target="_blank" rel="noopener">Back to README.md</a>
     </div>
   </header>
@@ -157,14 +155,16 @@
   </main>
 
   <footer>
-    <p>
+    <!-- Footer buttons: Book call + Back to Home side-by-side -->
+    <div class="cta-group" style="margin-top:0">
       <a class="cta" href="https://calendly.com/veydigital/30min-discovery?utm_source=site&utm_medium=cta&utm_campaign=footer" target="_blank" rel="noopener">Book a free discovery call</a>
-    </p>
-    <p>© 2025 <strong>VeyDigital™</strong>. Making data work for you — clear, simple, and built for growth.</p>
+      <a class="cta-secondary" href="/" aria-label="Back to Home" rel="noopener">Back to Home</a>
+    </div>
+    <p style="margin-top:1rem">© 2025 <strong>VeyDigital™</strong>. Making data work for you — clear, simple, and built for growth.</p>
   </footer>
 
   <script>
-    // Reveal-on-scroll (with graceful fallback)
+    // Reveal-on-scroll with graceful fallback
     (function(){
       const entriesToObserve = document.querySelectorAll('[data-reveal]');
       if (!('IntersectionObserver' in window) || entriesToObserve.length === 0) {
