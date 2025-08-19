@@ -1,7 +1,7 @@
 # VeyDigital
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Vey27/veydigital-site/main/assets/img/scaler4xtran.png" alt="VeyDigital Logo" width="320"/>
+  <img src="assets/img/textoutline.png" alt="VeyDigital Logo" width="320"/>
 </p>
 
 Modern AI dashboards, workflow automation, and predictive analytics — helping organizations turn raw data into clear decisions with speed and accuracy.
@@ -61,7 +61,7 @@ Modern AI dashboards, workflow automation, and predictive analytics.
 **Assets:**
 - Favicon → `/favicon.png`
 - Social Preview → `/og-image.jpg`
-- Logo → `assets/img/scaler4xtran.png` (transparent background)
+- Logo → `assets/img/textoutline.png` (transparent with outlined text)
 
 ---
 
