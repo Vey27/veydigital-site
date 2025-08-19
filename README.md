@@ -1,5 +1,9 @@
 # VeyDigital
 
+<p align="center">
+  <img src="assets/img/Logo2.png" alt="VeyDigital Logo" width="320"/>
+</p>
+
 Modern AI dashboards, workflow automation, and predictive analytics — helping organizations turn raw data into clear decisions with speed and accuracy.
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/Vey27/veydigital-site)
@@ -13,22 +17,15 @@ Modern AI dashboards, workflow automation, and predictive analytics.
 ## 🌐 Website
 [veydigital.com](https://veydigital.com)
 
----
-
 ## What We Do
 - **Quick Insights Dashboard**: Track KPIs like sales, revenue, churn, and costs.
 - **AI Workflow Automation**: Cut manual processes in half with automated workflows.
 - **Predictive Analytics for Growth**: Forecast demand, churn, and customer lifetime value.
 - **VeyCare Subscription**: Ongoing optimization of dashboards and automation.
 
----
-
 ## How to Use This Repo
 - `index.html` — landing page with inline styles for GitHub Pages.
-- `CNAME` — custom domain mapping (`veydigital.com`).
-- `/assets/` — brand logos, icons, and visuals.
-
----
+- (Optional) `CNAME` file if using custom domain `veydigital.com`.
 
 ## Deployment
 1. Push files to `main` branch.
@@ -36,12 +33,8 @@ Modern AI dashboards, workflow automation, and predictive analytics.
 3. Add custom domain `veydigital.com` in Pages settings.
 4. Enforce HTTPS once certificate is ready.
 
----
-
 ## Topics
 `ai` · `analytics` · `automation` · `business-intelligence`
-
----
 
 ## Best Practices
 - Keep repo organized with clear commit messages.
@@ -49,46 +42,39 @@ Modern AI dashboards, workflow automation, and predictive analytics.
 - Use Issues/Projects tabs in GitHub to manage roadmap and client requests.
 - Protect the `main` branch with required reviews for professional credibility.
 
----
-
 ## Contact
-- Email: info@veydigital.com  
+- Email: info@veydigital.com
 - Website: [veydigital.com](https://veydigital.com)
 
----
+# Brand
+**Colors:**
+- Deep Tech Blue `#0D1B2A`
+- Electric Blue `#00AEEF`
+- Warm Yellow `#FFC857`
+- Ink `#E6EEF8`
+- Slate `#A9B8CC`
 
-# Brand Guidelines
+**Typography:**
+- System sans (Arial/Helvetica)
+- Optional: Inter (400/600/800)
 
-### 🎨 Colors
-- **Deep Tech Blue** `#0D1B2A` — Primary background & header color  
-- **Electric Blue** `#00AEEF` — Accent / CTA highlights  
-- **Warm Yellow** `#FFC857` — Secondary accent  
-- **Ink White** `#E6EEF8` — Light text on dark backgrounds  
-- **Slate Gray** `#A9B8CC` — Neutral muted tone  
-
-### ✍️ Typography
-- **Primary Headings:** Montserrat Bold (Google Fonts)  
-- **Body Text:** Montserrat Regular  
-- **Fallbacks:** Arial, Helvetica, sans-serif  
-
-### 📦 Assets
-- `/assets/img/veydigitalLogo.png` — Main logo (transparent background)  
-- `/assets/img/veydigitalLogo_background.png` — Logo with black background  
-- `/assets/img/veydigital-font-sheet.png` — Font style reference  
-- `/favicon.png` — Browser tab icon  
-- `/og-image.jpg` — Social preview image  
+**Assets:**
+- Favicon → `/favicon.png`
+- Social Preview → `/og-image.jpg`
+- Logo → `assets/img/Logo2.png` (transparent background)
 
 ---
 
 ## Repo Info
-- `index.html` → Website root page  
-- `CNAME` → Domain mapping for GitHub Pages  
-- `README.md` → Repo overview & documentation  
-- `LICENSE` → Repository license information  
+- `index.html` → Website root page
+- `CNAME` → Domain mapping for GitHub Pages
+- `README.md` → Repo overview & documentation
+- `LICENSE` → Repository license information (already included)
 
 ---
 
 ## License
 This repository is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
 
 © VeyDigital
