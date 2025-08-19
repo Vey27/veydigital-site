@@ -1,11 +1,10 @@
 <p align="center">
     <img src="assets/img/logotranparentoutlinetext.png" alt="VeyDigital Logo" width="300"/>
   </p>
-
-  <p style="color:#E6EEF8;font-size:1.2rem;max-width:60ch;margin:0 auto 1.5rem;font-weight:300;">
-    Modern AI dashboards, workflow automation, and predictive analytics —  
-    helping organizations turn raw data into <strong>clear, confident decisions</strong>.
-  </p>
+<p style="color:#E6EEF8;font-size:1.2rem;max-width:60ch;margin:0 auto 1.5rem;font-weight:300;text-align:center;">
+  Modern AI dashboards, workflow automation, and predictive analytics —  
+  helping organizations turn raw data into <strong>clear, confident decisions</strong>.
+</p>
 
 ---
 <header>
