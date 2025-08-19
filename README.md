@@ -9,6 +9,13 @@
 ---
 <header>
 ##  🌐 Explore
+<h2 style="text-align:center;color:#E6EEF8;">🌐 Explore</h2>
+  <p align="center">
+    <a href="https://www.veydigital.com" style="background:#0D1B2A;color:#E6EEF8;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin:5px;">🏠 Home</a>
+    <a href="https://www.veydigital.com/work.html" style="background:#0D1B2A;color:#E6EEF8;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin:5px;">🧰 Work</a>
+    <a href="https://github.com/Vey27/veydigital-site" style="background:#0D1B2A;color:#E6EEF8;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin:5px;">📄 README</a>
+  </p>
+
 <p align="center">
   <a href="https://www.veydigital.com" style="background:#0D1B2A;color:#E6EEF8;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin:5px;">🏠 Home</a>
   <a href="https://www.veydigital.com/work.html" style="background:#0D1B2A;color:#E6EEF8;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin:5px;">🧰 Work</a>
@@ -71,5 +78,5 @@
 
 ## ⚖️ License
 This project is licensed under the **MIT License** — see [LICENSE](LICENSE).  
-
+</header>
 © **VeyDigital** · Built for speed, accuracy, and growth.
