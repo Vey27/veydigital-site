@@ -2,10 +2,7 @@
   <img src="assets/img/logotranparentoutlinetext.png" alt="VeyDigital Logo" width="300"/>
 </p>
  <header>
-    <!-- Logo -->
-    <a href="/" class="brand" aria-label="VeyDigital home">
-      <img src="assets/img/logotranparentoutlinetext.png" alt="VeyDigital Logo" loading="lazy">
-    </a>
+
   <p align="center">
   Modern AI dashboards, workflow automation, and predictive analytics —  
   helping organizations turn raw data into <strong>clear, confident decisions</strong>.
