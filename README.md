@@ -1,4 +1,4 @@
-# VeyDigital
+# Beta_appStore_opensoon
 
 <p align="center">
   <img src="assets/img/logotranparentoutlinetext.png" alt="VeyDigital Logo" width="300">
