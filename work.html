@@ -81,8 +81,8 @@
 
     /* Footer — identical to index.html */
     footer{background:#000000;color:#fff;text-align:center;padding:1rem;margin-top:2.5rem;font-size:.95rem}
-    footer strong{color:var(--accent)}
-    a{color:var(--primary)}
+    footer strong{color:#FFC857}
+    a{color:#00AEEF}
     a:focus{outline:3px solid var(--focus);outline-offset:3px}
 
     /* Accessibility & reveal */
@@ -101,7 +101,11 @@
 
   <header>
     <a href="/" class="brand" aria-label="VeyDigital home">
-      <img src="assets/img/logotranparentoutlinetext.png" alt="VeyDigital Logo">
+      <img
+        src="assets/img/logotranparentoutlinetext.png"
+        alt="VeyDigital Logo"
+        onerror="this.onerror=null;this.src='assets/img/textoutline.png';"
+      >
     </a>
     <p>Our work shows how raw spreadsheets become strategy — clear dashboards, streamlined automation, and predictive analytics built for growth.</p>
     <div class="cta-group">
